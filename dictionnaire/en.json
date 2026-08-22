@@ -1,0 +1,18 @@
+{
+  "HomePage": {
+    "title": "Willkommen auf meiner Website elie",
+    "description": "Entdecken Sie unsere Dienstleistungen."
+  },
+  "Navigation": {
+    "Home": "Home",
+    "Machinery": "Machinery",
+    "Services": "Services",
+    "Rental": "Rental",
+    "Products": "Products",
+    "About": "About us",
+    "Contact": "Contact"
+  },
+  "RequestQuote": {
+    "title": "Request a quote"
+  }
+}
