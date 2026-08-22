@@ -7,7 +7,11 @@ import { useRouter, usePathname } from "@/i18n/navigation";
 
 const languages: ("fr" | "en")[] = ["fr", "en"];
 
-export function LanguageSwitcher() {
+type LanguageSwitcherProps = {
+    className?: string,
+};
+
+export function LanguageSwitcher({className}: LanguageSwitcherProps) {
 
     const router = useRouter();
     const pathname = usePathname();
@@ -19,7 +23,10 @@ export function LanguageSwitcher() {
 
     return (
         <div role="group" aria-label="Language selector"
-            className="flex items-center gap-0.5 rounded-md p-0.5 bg-white/10" 
+            className={cn(`
+                flex items-center gap-0.5 rounded-md p-0.5 bg-white/10`,
+                className
+            )} 
         >
             {languages.map((language) => (
                 <button
@@ -35,7 +42,7 @@ export function LanguageSwitcher() {
                     aria-current={locale === language ? "true" :  undefined}
                     onClick={() => changeLanguage(language)}
                 >
-                    <span aria-hidden="true">{locale === language? language: '🇬🇧'}</span>{language}
+                    <span aria-hidden="true">{language === "fr"? '🇫🇷': '🇬🇧'}</span>{language}
                 </button>
             ))}
         </div>

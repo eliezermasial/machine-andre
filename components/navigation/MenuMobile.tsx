@@ -18,8 +18,8 @@ export function MenuMobile ({handleClosedMobile}: MenuMobile) {
 
     return (
         <div className={cn("fixed inset-0 z-50 bg-primary/30 backdrop-blur-md flex flex-col items-end md:hidden")}>
-            <div className="flex flex-col w-[65%] h-full max-h-screen overflow-y-auto">
-                <div className="flex justify-between bg-gray-50/80 border border-b-gray-300 px-3 py-5">
+            <div className="flex flex-col w-[80%] h-full max-h-screen bg-cmyk overflow-y-auto">
+                <div className="flex justify-between border border-b-gray-300 px-3 py-5">
                     <Logo />
                     <button className={cn(`flex justify-center bg-white items-center md:hidden p-2
                         border border-gray-300 rounded-xl cursor-pointer`)}
@@ -56,21 +56,22 @@ export function MenuMobile ({handleClosedMobile}: MenuMobile) {
                         <Link href={""}>Contact</Link>
                     </div>
                 </div>
-                <div className="bg-gray-200 h-screen flex flex-col justify-around gap-5 px-3 py-5">
-                    <div className="py-2 bg-gray-50/5 rounded-md flex justify-center items-center">
-                        <LanguageSwitcher />
-                    </div>
-                    <div className="flex flex-col gap-5">
-                        <RequestQuote>
-                            {t("title")}
-                        </RequestQuote>
-                        <RequestQuote className={cn(" bg-transparent border-3 border-onPrimary text-onPrimary hover:bg-transparent")}>
-                            appel
-                        </RequestQuote>
-                        <RequestQuote>
-                            whatsapp
-                        </RequestQuote>
-                    </div>
+                <div className="h-screen flex flex-col justify-around gap-3 p-3">
+                    
+                    <LanguageSwitcher className={cn("bg-gray-800/10")} />
+                    
+                    <RequestQuote>
+                        {t("title")}
+                    </RequestQuote>
+
+                    <RequestQuote className={cn(`
+                        bg-transparent border-3 border-onPrimary text-onPrimary hover:bg-transparent
+                    `)}>
+                        appel
+                    </RequestQuote>
+                    <RequestQuote className={cn("bg-green-500 hover:bg-green-500")}>
+                        whatsapp
+                    </RequestQuote>
                 </div>
             </div>
         </div>

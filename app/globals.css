@@ -6,6 +6,7 @@
   --primary: #183d25;
   --onPrimary: #2f6b3c;
   --gold: #d6a62a;
+  --cmyk: #f4f1e8;
   --text: #374151cc;
   --primary-dark: #183d25;
 }
@@ -16,6 +17,7 @@
   --color-primary: var(--primary);
   --color-onPrimary: var(--onPrimary);
   --color-gold: var(--gold);
+  --color-cmyk: var(--cmyk);
   --color-text: var(--text);
   --color-primary-dark: var(--primary-dark);
 
@@ -30,6 +32,7 @@
     --primary: #183d25;
     --onPrimary: #2f6b3c;
     --gold: #d6a62a;
+    --cmyk: #f4f1e8;
     --text: #374151cc;
     --primary-dark: #183d25;
   }

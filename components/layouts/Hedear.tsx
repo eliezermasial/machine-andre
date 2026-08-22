@@ -5,10 +5,10 @@ import { Logo } from "../ui/Logo";
 import { cn } from "@/lib/utils/cn";
 import { ListFilter } from "lucide-react";
 import { Container } from "../ui/Container";
+import { useTranslations } from "next-intl";
 import { RequestQuote } from "../ui/RequestQuote";
 import { Navigation } from "../navigation/Navigation";
 import { MenuMobile } from "../navigation/MenuMobile";
-import { useTranslations } from "next-intl";
 
 
 export function Hedear() {
@@ -45,8 +45,6 @@ export function Hedear() {
                 {openMobile && (
                     <MenuMobile handleClosedMobile={handleClosedMobile} />
                 )}
-                    
-                
             </Container>
         </header>
     )
