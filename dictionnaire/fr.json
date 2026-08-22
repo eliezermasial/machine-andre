@@ -1,7 +1,8 @@
 {
 "HomePage": {
-    "title": "Bienvenue sur mon site",
-    "description": "Découvrez nos services."
+    "title": "Plus de force pour votre terre,",
+    "sous-title": "plus d'avenir pour votre récolte.",
+    "description": "Solutions agricoles intégrales pour professionnels, exploitations agricoles et agriculteurs modernes."
   },
   "Navigation": {
     "Home": "Accueil",

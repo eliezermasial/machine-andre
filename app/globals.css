@@ -8,7 +8,6 @@
   --gold: #d6a62a;
   --cmyk: #f4f1e8;
   --text: #374151cc;
-  --primary-dark: #183d25;
 }
 
 @theme inline {
@@ -19,7 +18,6 @@
   --color-gold: var(--gold);
   --color-cmyk: var(--cmyk);
   --color-text: var(--text);
-  --color-primary-dark: var(--primary-dark);
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -34,10 +32,18 @@
     --gold: #d6a62a;
     --cmyk: #f4f1e8;
     --text: #374151cc;
-    --primary-dark: #183d25;
   }
 }
+.display-lg {
+  font-size: 3rem;
+  line-height: 1.1;
+}
 
+@media (min-width: 1024px) {
+  .display-lg {
+    font-size: 4.5rem;
+  }
+}
 body {
   background: var(--background);
   color: var(--foreground);

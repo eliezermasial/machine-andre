@@ -56,22 +56,26 @@ export function MenuMobile ({handleClosedMobile}: MenuMobile) {
                         <Link href={""}>Contact</Link>
                     </div>
                 </div>
-                <div className="h-screen flex flex-col justify-around gap-3 p-3">
-                    
-                    <LanguageSwitcher className={cn("bg-gray-800/10")} />
-                    
-                    <RequestQuote>
-                        {t("title")}
-                    </RequestQuote>
+                <div className="h-screen flex flex-col justify-around gap-1 md:gap-3 px-3 py-1 md:py-3">
+                    <div>
+                        <LanguageSwitcher className={cn("bg-gray-800/10")} />
+                    </div>
+                    <div>
+                        <RequestQuote>
+                            {t("title")}
+                        </RequestQuote>
 
-                    <RequestQuote className={cn(`
-                        bg-transparent border-3 border-onPrimary text-onPrimary hover:bg-transparent
-                    `)}>
-                        appel
-                    </RequestQuote>
-                    <RequestQuote className={cn("bg-green-500 hover:bg-green-500")}>
-                        whatsapp
-                    </RequestQuote>
+                        <RequestQuote className={cn(`
+                            bg-transparent border-3 border-onPrimary text-onPrimary hover:bg-transparent
+                        `)}>
+                            appel
+                        </RequestQuote>
+                        <RequestQuote
+                            className={cn("bg-green-500 hover:bg-green-500")}
+                        >
+                            whatsapp
+                        </RequestQuote>
+                    </div>
                 </div>
             </div>
         </div>
