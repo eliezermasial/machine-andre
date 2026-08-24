@@ -35,13 +35,14 @@
   }
 }
 .display-lg {
-  font-size: 3rem;
+  font-size: 4.5rem;
   line-height: 1.1;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .display-lg {
-    font-size: 4.5rem;
+    font-size: 3rem;
+    line-height: 1.1;
   }
 }
 body {

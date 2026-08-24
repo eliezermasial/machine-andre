@@ -2,7 +2,14 @@
   "HomePage": {
     "title": "More power for your land,",
     "sous-title": "more future for your harvest.",
-    "description": "Integrated agricultural solutions for professionals, farms and modern farmers."
+    "description": "Integrated agricultural solutions for professionals, farms and modern farmers.",
+    "experience": "Over 40 years of experience",
+    "AgriculturalService": "Agricultural service",
+    "Sales": "Sales",
+    "Rental": "Rental",
+    "Repair": "Repair",
+    "Yearsexperience": "Years of experience",
+    "Commitment": "Commitment"
   },
   "Navigation": {
     "Home": "Home",
@@ -13,7 +20,9 @@
     "About": "About us",
     "Contact": "Contact"
   },
-  "RequestQuote": {
-    "title": "Request a quote"
+  "Button": {
+    "RequestQuote": "Request a quote",
+    "View machinery": "View machinery"
   }
+
 }

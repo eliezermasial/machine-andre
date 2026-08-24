@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "@/lib/utils/cn";
 import { Link } from "@/i18n/navigation";
 
@@ -7,7 +9,7 @@ type RequestQuoteProps = {
     className?: string
 };
 
-export function RequestQuote ({children, className}: RequestQuoteProps) {
+export function Button ({children, className}: RequestQuoteProps) {
 
     return (
         <Link href={"/"}

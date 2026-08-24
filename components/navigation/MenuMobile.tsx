@@ -5,7 +5,7 @@ import { Logo } from "../ui/Logo";
 import { cn } from "@/lib/utils/cn";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-import { RequestQuote } from "../ui/RequestQuote";
+import { Button } from "../ui/Button";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 
@@ -61,20 +61,20 @@ export function MenuMobile ({handleClosedMobile}: MenuMobile) {
                         <LanguageSwitcher className={cn("bg-gray-800/10")} />
                     </div>
                     <div>
-                        <RequestQuote>
+                        <Button>
                             {t("title")}
-                        </RequestQuote>
+                        </Button>
 
-                        <RequestQuote className={cn(`
+                        <Button className={cn(`
                             bg-transparent border-3 border-onPrimary text-onPrimary hover:bg-transparent
                         `)}>
                             appel
-                        </RequestQuote>
-                        <RequestQuote
+                        </Button>
+                        <Button
                             className={cn("bg-green-500 hover:bg-green-500")}
                         >
                             whatsapp
-                        </RequestQuote>
+                        </Button>
                     </div>
                 </div>
             </div>

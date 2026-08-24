@@ -1,14 +1,17 @@
+"use client";
+
 import Link from "next/link";
 import { cn } from "@/lib/utils/cn";
 import { MapPin } from "lucide-react";
 import { Container } from "../ui/Container";
+import { useScroll } from "@/hooks/useScroll";
 import { LanguageSwitcher } from "../navigation/LanguageSwitcher";
 
 
 export function PreHedear () {
-    
+    const isScroll = useScroll();
     return (
-        <div className="bg-primary py-2">
+        <div className={cn(`bg-primary py-2`, isScroll? "hidden":"block")}>
             <Container className={cn("flex h-10 items-center justify-between")}> 
                 <div className="flex items-center gap-5">
                     <MapPin size={18} />

@@ -6,14 +6,17 @@ import { cn } from "@/lib/utils/cn";
 import { ListFilter } from "lucide-react";
 import { Container } from "../ui/Container";
 import { useTranslations } from "next-intl";
-import { RequestQuote } from "../ui/RequestQuote";
+import { useScroll } from "@/hooks/useScroll";
+import { Button } from "../ui/Button";
 import { Navigation } from "../navigation/Navigation";
 import { MenuMobile } from "../navigation/MenuMobile";
 
 
 export function Hedear() {
+    const isScroll = useScroll();
+
     const [openMobile, setOpenMobile] = useState<boolean>(false);
-    const t = useTranslations("RequestQuote");
+    const t = useTranslations("Button");
 
     const handleMobile = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
@@ -26,14 +29,17 @@ export function Hedear() {
     }
 
     return (
-        <header className={cn("relative bg-white flex items-center py-5")}>
+        <header className={cn("bg-white flex items-center border-gold py-5",
+            isScroll? "fixed w-full z-100":"relative transition-discrete"
+            )}
+        >
             <Container className={cn("flex justify-between w-full ")}>
                 <Logo />
                 <Navigation />
                 <div className="flex justify-baseline items-center gap-3 ">
-                    <RequestQuote>
-                        {t("title")}
-                    </RequestQuote>
+                    <Button>
+                        {t("RequestQuote")}
+                    </Button>
                     <button className={cn(`flex justify-center items-center md:hidden p-2
                         border border-gray-300 rounded-lg cursor-pointer`)}
                         onClick={handleMobile}
@@ -41,7 +47,6 @@ export function Hedear() {
                         <ListFilter size={24} color="black" />
                     </button>
                 </div>
-
                 {openMobile && (
                     <MenuMobile handleClosedMobile={handleClosedMobile} />
                 )}

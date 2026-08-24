@@ -2,7 +2,14 @@
 "HomePage": {
     "title": "Plus de force pour votre terre,",
     "sous-title": "plus d'avenir pour votre récolte.",
-    "description": "Solutions agricoles intégrales pour professionnels, exploitations agricoles et agriculteurs modernes."
+    "description": "Solutions agricoles intégrales pour professionnels, exploitations agricoles et agriculteurs modernes.",
+    "experience": "Plus de 40 ans d'expérience",
+    "AgriculturalService": "Service agricole",
+    "Sales": "Vente",
+    "Rental": "Location",
+    "Repair": "Réparation",
+    "Yearsexperience": "Années d'expérience",
+    "Commitment": "Engagement"
   },
   "Navigation": {
     "Home": "Accueil",
@@ -13,7 +20,8 @@
     "About": "À propos",
     "Contact": "Contact"
   },
-  "RequestQuote": {
-    "title": "Demander un devis"
+  "Button": {
+    "RequestQuote": "Demander un devis",
+    "View machinery": "Voir le matériel"
   }
 }
