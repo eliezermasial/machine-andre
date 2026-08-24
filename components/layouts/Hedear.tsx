@@ -40,7 +40,7 @@ export function Hedear() {
                     <Button>
                         {t("RequestQuote")}
                     </Button>
-                    <button className={cn(`flex justify-center items-center md:hidden p-2
+                    <button className={cn(`flex justify-center items-center lg:hidden p-2
                         border border-gray-300 rounded-lg cursor-pointer`)}
                         onClick={handleMobile}
                     >

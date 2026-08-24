@@ -18,7 +18,7 @@ export function Navigation () {
     const t = useTranslations("Navigation");
 
     return (
-        <nav className={cn(" hidden md:flex justify-center items-center gap-2")}>
+        <nav className={cn(" hidden lg:flex justify-center items-center gap-2")}>
             {navLinks.map((link) => (
 
                 <Link key={link.key} href={link.href}
