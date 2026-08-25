@@ -25,7 +25,8 @@
       "@/hooks/*": ["./hooks/*"],
       "@/dictionnaire/*": ["./dictionnaire/*"],
       "@/i18n/*": ["./i18n/*"],
-      "@/public/*": ["./public/*"]
+      "@/public/*": ["./public/*"],
+      "@/lib/*": ["./lib/*"]
     }
   },
   "include": [

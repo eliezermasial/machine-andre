@@ -10,7 +10,7 @@
     "Repair": "Repair",
     "Yearsexperience": "Years of experience",
     "Commitment": "Commitment",
-    "Working-title": "Over 40 years working alongside \nfarmers",
+    "Working-title": "Over 40 years working alongside farmers",
     "Working-description": "For more than four decades, we combine experience, technology and specialised service to offer solutions tailored to every farm."
   },
   "Navigation": {
@@ -25,6 +25,14 @@
   "Button": {
     "RequestQuote": "Request a quote",
     "View machinery": "View machinery"
+  },
+  "About-us": {
+    "title": "Agricultural tradition.",
+    "sous-title": "Technology for the future.",
+    "description": "At Maquinaria Andrés we combine the best of tradition and innovation. Thanks to our commitment to farmers, we have become a benchmark in the agricultural sector.",
+    "Yearsexperience": "Years of experience",
+    "About": "Discover Maquinaria Andrés",
+    "WHO-WE-ARE": "WHO WE ARE"
   }
 
 }

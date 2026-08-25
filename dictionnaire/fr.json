@@ -10,7 +10,7 @@
     "Repair": "Réparation",
     "Yearsexperience": "Années d'expérience",
     "Commitment": "Engagement",
-    "Working-title": "Plus de 40 ans aux côtés de \nl'agriculteur",
+    "Working-title": "Plus de 40 ans aux côtés de l'agriculteur",
     "Working-description": "Depuis plus de quatre décennies, nous combinons expérience, technologie et service spécialisé pour offrir des solutions adaptées à chaque exploitation."
   },
   "Navigation": {
@@ -25,5 +25,18 @@
   "Button": {
     "RequestQuote": "Demander un devis",
     "View machinery": "Voir le matériel"
+  },
+  "About-us": {
+    "title": "Tradition agricole.",
+    "sous-title": "Technologie pour l'avenir.",
+    "description": "Chez Maquinaria Andrés, nous allions le meilleur de la tradition et de l'innovation. Grâce à notre engagement envers l'agriculteur, nous sommes devenus une référence du secteur agricole.",
+    "Yearsexperience": "Years of experience",
+    "About": "Découvrir Maquinaria Andrés",
+    "WHO-WE-ARE": "Qui sommes-nous",
+    "years-of-experience": "Plus de 40 ans d'expérience",
+    "Latest-generation": "Technologie agricole de dernière génération",
+    "Specialised": "Service technique spécialisé",
+    "Personalised-attention": "Attention personnalisée",
+    "Top-quality": "Équipements de qualité maximale"
   }
 }

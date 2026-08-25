@@ -1,0 +1,45 @@
+export const images = [
+    {
+        src: "/tracteur.jpg",
+        alt: "Tracteur agricole",
+        className: "col-span-2 row-span-2",
+    },
+    {
+        src: "/tractor2.jpg",
+        alt: "Mini tracteur agricole",
+        className: "col-span-1 row-span-1",
+    },
+    {
+        src: "/tractor3.jpg",
+        alt: "Équipement agricole",
+        className: "col-span-1 row-span-1",
+    },
+    {
+        src: "/tractor4.jpg",
+        alt: "Matériel agricole",
+        className: "col-span-1 row-span-1",
+    },
+    {
+        src: "/tractor5.jpg",
+        alt: "Machine agricole",
+        className: "col-span-1 row-span-1",
+    },
+    {
+        src: "/tractor2.jpg",
+        alt: "Pulvérisateur agricole",
+        className: "col-span-2 row-span-1",
+    },
+    {
+        src: "/tractor1.jpg",
+        alt: "Équipement agricole",
+        className: "col-span-2 row-span-1",
+    },
+] as const;
+
+export const advantages = [
+    "years-of-experience",
+    "Latest-generation",
+    "Specialised",
+    "Personalised-attention",
+    "Top-quality"
+] as const;

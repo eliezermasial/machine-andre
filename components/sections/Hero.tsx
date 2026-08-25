@@ -97,7 +97,7 @@ export function Hero() {
                         <span className="bg-white/10 border border-white/20 rounded-lg px-2 py-1 text-[13px]">
                             {t("Repair")}
                         </span>
-                        <span className="bg-white/10 border border-white/20 rounded-lg px-2 py-1 text-[13px]">
+                        <span className="bg-white/10 whitespace-nowrap border border-white/20 rounded-lg px-2 py-1 text-[13px]">
                             {t("AgriculturalService")}
                         </span>
                     </div>

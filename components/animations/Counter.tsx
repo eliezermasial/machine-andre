@@ -8,10 +8,10 @@ import { useEffect, useState, useRef } from "react";
 type counterProps = {
     target: number,
     className?: string,
-    suffix: React.ReactNode
+    suffix?: React.ReactNode
 };
 
-export function Counter ({target,className,suffix}: counterProps) {
+export function Counter ({target,className,suffix="+"}: counterProps) {
     
     const [count, setCount] = useState<number>(0);
     const ref = useRef<HTMLSpanElement>(null);
@@ -36,7 +36,7 @@ export function Counter ({target,className,suffix}: counterProps) {
     },[isInView, target]);
 
     return (
-        <span ref={ref} className={cn(className)}>
+        <span ref={ref} translate="no" className={cn(className)}>
           {count}{suffix}
         </span>
     )

@@ -14,7 +14,7 @@ type MenuMobile = {
 };
 
 export function MenuMobile ({handleClosedMobile}: MenuMobile) {
-    const t = useTranslations("RequestQuote");
+    const t = useTranslations("Button");
 
     return (
         <div className={cn("fixed inset-0 z-50 bg-primary/30 backdrop-blur-md flex flex-col items-end md:hidden")}>
@@ -62,7 +62,7 @@ export function MenuMobile ({handleClosedMobile}: MenuMobile) {
                     </div>
                     <div>
                         <Button>
-                            {t("title")}
+                            {t("RequestQuote")}
                         </Button>
 
                         <Button className={cn(`

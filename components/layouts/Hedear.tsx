@@ -29,7 +29,7 @@ export function Hedear() {
     }
 
     return (
-        <header className={cn("bg-white flex items-center border-gold py-5",
+        <header className={cn("bg-white border-b border-white/45 shadow-sm flex items-center py-5",
             isScroll? "fixed w-full z-100":"relative transition-discrete"
             )}
         >
