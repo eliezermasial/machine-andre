@@ -14,7 +14,7 @@ export function AboutSection() {
 
     return (
         <Section className="bg-white text-black max-md:px-3">
-            <Container>
+            <Container className="">
                 <div className="grid grid-cols-1 gap-25 pt-10 lg:grid-cols-2 lg:items-center lg:gap-16">
                     <div className="relative scale-107 border-3 border-gold/40 rounded-2xl p-3 pr-0">
                         <div className="rounded-3xl z-10 zoom-120 bg-white shadow-2xl p-3 pt-1">
@@ -52,13 +52,13 @@ export function AboutSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="relative">
+                    <div className="relative md:pl-10">
                         <div className="flex items-center gap-3">
                             <span className="text-xs font-sans font-bold uppercase tracking-[0.25em] text-onPrimary">
                                 {t("WHO-WE-ARE")} ?
                             </span>
                         </div>
-                        <h2 className="text-4xl my-8 md:text-6xl font-sans font-bold leading-[1.05] text-primary">
+                        <h2 className="text-4xl my-5 md:text-6xl font-sans font-bold leading-[1.05] text-primary">
                             {t("title")}
                             <br />
                             <span className="text-onPrimary">{t("sous-title")} </span>
@@ -77,27 +77,29 @@ export function AboutSection() {
                                     "
                                 >
                                     <div className="flex h-10 w-10 shrink-0 items-center justify-center font-bold
-                                        rounded-lg bg-onPrimary font-sans transition-all duration-100 text-white shadow-sm
-                                        hover:bg-gold hover:text-primary text-[15px]
-                                        "
+                                        rounded-lg bg-onPrimary font-sans transition-all duration-100 text-white
+                                        hover:bg-gold hover:text-primary text-[15px] shadow-sm"
                                     >
                                         {String(index + 1).padStart(2, "0")}
                                     </div>
-                                    <span dir="auto" className="font-bold align-inherit leading-5 text-primary sm:text-base">
+                                    <span dir="auto" className="font-bold align-inherit leading-5
+                                        xs:text-sm sm:text-base text-primary"
+                                    >
                                         {t(advantage)}
                                     </span>
                                 </div>
                             ))}
                         </div>
                         <div className="mt-8 flex gap-2">
-                            <Button className="rounded-lg bg-onPrimary px-6 py-3 font-bold
+                            <Button className="rounded-lg text-sm md:text-base bg-onPrimary px-3 py-3 font-bold
                                 transition-colors whitespace-nowrap hover:bg-primary text-white"
                             >
-                                {t("About")} →
+                                {t("About")}
                             </Button>
 
-                            <Button className="rounded-lg bg-transparent border-none border-primary px-6 py-3 font-bold
-                                text-onPrimary shadow-none transition-colors hover:bg-transparent hover:underline"
+                            <Button className="rounded-lg bg-transparent border-none border-primary px-1 py-1 font-bold
+                                text-onPrimary text-sm md:text-base shadow-none transition-colors
+                                hover:bg-transparent hover:underline"
                             >
                                 Contact
                             </Button>

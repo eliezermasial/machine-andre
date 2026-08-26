@@ -14,8 +14,8 @@ export function Button ({children, className}: RequestQuoteProps) {
     return (
         <Link href={"/"}
             className={cn(
-                `flex items-center justify-center bg-onPrimary font-semibold font-sans px-6 py-3
-                text-center text-white rounded-lg hover:bg-primary transition-all shadow`,
+                `flex items-center text-xs xs:text-sm md:text-base justify-center bg-onPrimary font-sans px-6 py-3
+                text-center text-white rounded-lg hover:bg-primary transition-all shadow font-semibold`,
                 className
             )}
         >
