@@ -58,7 +58,7 @@ export function AboutSection() {
                                 {t("WHO-WE-ARE")} ?
                             </span>
                         </div>
-                        <h2 className="text-4xl my-5 md:text-6xl font-sans font-bold leading-[1.05] text-primary">
+                        <h2 className="text-3xl my-5 md:text-5xl font-sans font-bold leading-[1.05] text-primary">
                             {t("title")}
                             <br />
                             <span className="text-onPrimary">{t("sous-title")} </span>
@@ -68,11 +68,11 @@ export function AboutSection() {
                         >
                             {t("description")}
                         </p>
-                        <div className="mt-8 flex flex-col gap-3 ">
+                        <div className="mt-8 flex flex-col gap-5 ">
                             {advantages.map((advantage, index) => (
                                 <div key={advantage}
                                     className="flex min-h-18 items-center gap-4 rounded-xl border border-primary/10
-                                        bg-cmyk/40 px-4 py-3 transition-all duration-100 
+                                        bg-cmyk/40 px-4 py-3 transition-all duration-100 scale-105
                                         hover:border-gold/50 hover:bg-white hover:shadow-xl hover:shadow-cmyk/65
                                     "
                                 >
@@ -90,7 +90,7 @@ export function AboutSection() {
                                 </div>
                             ))}
                         </div>
-                        <div className="mt-8 flex gap-2">
+                        <div className="mt-8 flex gap-2 scale-105">
                             <Button className="rounded-lg text-sm md:text-base bg-onPrimary px-3 py-3 font-bold
                                 transition-colors whitespace-nowrap hover:bg-primary text-white"
                             >

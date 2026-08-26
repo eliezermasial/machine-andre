@@ -32,7 +32,17 @@
     "description": "At Maquinaria Andrés we combine the best of tradition and innovation. Thanks to our commitment to farmers, we have become a benchmark in the agricultural sector.",
     "Yearsexperience": "Years of experience",
     "About": "Discover Maquinaria Andrés",
-    "WHO-WE-ARE": "WHO WE ARE"
+    "WHO-WE-ARE": "WHO WE ARE",
+    "years-of-experience": "Over 40 years of experience",
+    "Latest-generation": "Latest-generation agricultural technology",
+    "Specialised": "Specialised technical service",
+    "Personalised-attention": "Personalised attention",
+    "Top-quality": "Top-quality equipment"
+  },
+  "Section-services": {
+    "title": "Everything you need for your farm",
+    "description": "Un écosystème complet de solutions agricoles en un seul lieu.",
+    "annonce": "Everything"
   }
 
 }

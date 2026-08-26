@@ -16,8 +16,8 @@ export function Hero() {
 
     return (
         <section className={cn(` 
-            relative h-full overflow-hidden border-r-4 border-t[50%]
-            max-md:px-3 border-dashed border-gold font-sans pt-30 
+            relative h-full px-6 overflow-hidden border-r-4 border-t[50%]
+            max-md:px-3 border-dashed border-gold font-sans pt-15
         `)}
         >
             <div className={cn(`absolute inset-0 bg-linear-to-r from-transparent
@@ -47,6 +47,7 @@ export function Hero() {
                         ease: [0.215, 0.610, 0.355, 1.000],
                     }}
                 >
+                
                 <div className="flex flex-col gap-8 md:gap-15 max-md:px-4 md:px-6">
                     <div>
                         <div className="flex justify-start items-center gap-3 mb-5">

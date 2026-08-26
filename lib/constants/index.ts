@@ -43,3 +43,12 @@ export const advantages = [
     "Personalised-attention",
     "Top-quality"
 ] as const;
+
+export const services = [
+    {name: "Vente de machines"},
+    {name: "Réparation et entretien"},
+    {name: "location de machines"},
+    {name: "Préparation des terres"},
+    {name:"Semences et engrais"},
+    {name:"Outils et accessoires"},
+] as const;

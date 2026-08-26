@@ -38,5 +38,10 @@
     "Specialised": "Service technique spécialisé",
     "Personalised-attention": "Attention personnalisée",
     "Top-quality": "Équipements de qualité maximale"
+  },
+  "Section-services": {
+    "title": "Tout ce dont vous avez besoin pour votre exploitation",
+    "description": "Un écosystème complet de solutions agricoles en un seul endroit.",
+    "annonce": "Tout"
   }
 }
