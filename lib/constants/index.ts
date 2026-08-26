@@ -45,10 +45,10 @@ export const advantages = [
 ] as const;
 
 export const services = [
-    {name: "Vente de machines"},
-    {name: "Réparation et entretien"},
-    {name: "location de machines"},
-    {name: "Préparation des terres"},
-    {name:"Semences et engrais"},
-    {name:"Outils et accessoires"},
+    {name: "Machinery-sales", descr: "service-sales"},
+    {name: "Repair-maintenance", descr: "service-Repair"},
+    {name: "Machinery-rental", descr: "service-rental"},
+    {name: "Seeds-fertilisers", descr: "service-seeds"},
+    {name:"Tools-accessories", descr: "service-Tools"},
+    {name:"Land-preparation", descr: "service-Land"},
 ] as const;

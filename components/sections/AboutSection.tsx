@@ -52,16 +52,16 @@ export function AboutSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="relative md:pl-10">
+                    <div className="relative md:pl-10 scale-105 ">
                         <div className="flex items-center gap-3">
                             <span className="text-xs font-sans font-bold uppercase tracking-[0.25em] text-onPrimary">
                                 {t("WHO-WE-ARE")} ?
                             </span>
                         </div>
-                        <h2 className="text-3xl my-5 md:text-5xl font-sans font-bold leading-[1.05] text-primary">
+                        <h2 className="text-3xl my-5 md:text-5xl font-sans font-bold leading-[1.15] text-primary">
                             {t("title")}
                             <br />
-                            <span className="text-onPrimary">{t("sous-title")} </span>
+                            <span className="text-onPrimary mt-2">{t("sous-title")} </span>
                         </h2>
                         <p className="mt-7 max-w-xl text-md font-medium leading-7
                             text-text font-semidbold sm:text-lg sm:leading-8"
@@ -72,7 +72,7 @@ export function AboutSection() {
                             {advantages.map((advantage, index) => (
                                 <div key={advantage}
                                     className="flex min-h-18 items-center gap-4 rounded-xl border border-primary/10
-                                        bg-cmyk/40 px-4 py-3 transition-all duration-100 scale-105
+                                        bg-cmyk/40 px-4 py-3 transition-all duration-100
                                         hover:border-gold/50 hover:bg-white hover:shadow-xl hover:shadow-cmyk/65
                                     "
                                 >
@@ -90,7 +90,7 @@ export function AboutSection() {
                                 </div>
                             ))}
                         </div>
-                        <div className="mt-8 flex gap-2 scale-105">
+                        <div className="mt-8 flex gap-2">
                             <Button className="rounded-lg text-sm md:text-base bg-onPrimary px-3 py-3 font-bold
                                 transition-colors whitespace-nowrap hover:bg-primary text-white"
                             >

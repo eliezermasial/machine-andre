@@ -42,7 +42,19 @@
   "Section-services": {
     "title": "Everything you need for your farm",
     "description": "Un écosystème complet de solutions agricoles en un seul lieu.",
-    "annonce": "Everything"
+    "annonce": "Everything",
+    "Machinery-sales": "Machinery sales",
+    "service-sales": "Tractors, mini tractors, tillers, implements and much more.",
+    "Repair-maintenance": "Repair & maintenance",
+    "service-Repair": "Specialised multi-brand technical service.",
+    "Machinery-rental": "Machinery rental",
+    "service-rental": "Flexible solutions for seasonal campaigns and one-off jobs.",
+    "Land-preparation": "Land preparation",
+    "service-Land": "Plowing, tilling, clearing and conditioning.",
+    "Seeds-fertilisers": "Seeds & fertilisers",
+    "service-seeds": "Selected products for every crop",
+    "Tools-accessories": "Tools & accessories",
+    "service-Tools": "All complementary equipment."
   }
 
 }

@@ -37,7 +37,7 @@ export function LanguageSwitcher({className}: LanguageSwitcherProps) {
                             font-semibold transition-all duration-200
                         `,
                         locale === language ?
-                        "bg-white text-primary-dark" : "text-white/70 hover:text-white"
+                        "bg-white text-primary" : "text-white/70 hover:text-white"
                     )}
                     aria-current={locale === language ? "true" :  undefined}
                     onClick={() => changeLanguage(language)}

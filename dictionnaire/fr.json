@@ -42,6 +42,22 @@
   "Section-services": {
     "title": "Tout ce dont vous avez besoin pour votre exploitation",
     "description": "Un écosystème complet de solutions agricoles en un seul endroit.",
-    "annonce": "Tout"
+    "annonce": "Tout",
+    "Machinery-sales": "Vente de matériel",
+    "service-sales": "Tracteurs, mini tracteurs, motoculteurs, outils et bien plus.",
+    "Repair-maintenance": "Réparation et entretien",
+    "service-Repair": "Service technique multimarque spécialisé.",
+    "Machinery-rental": "Location de matériel",
+    "service-rental": "Solutions flexibles pour campagnes et travaux ponctuels.",
+    "Land-preparation": "Préparation des sols",
+    "service-Land": "Labour, travail du sol, nettoyage et conditionnement.",
+    "Seeds-fertilisers": "Semences et engrais",
+    "service-seeds": "Produits sélectionnés pour chaque culture.",
+    "Tools-accessories": "Outils et accessoires",
+    "service-Tools": "Tout l'équipement complémentaire."
   }
+
+
+
+
 }
