@@ -21,7 +21,7 @@ export function Hero() {
         `)}
         >
             <div className={cn(`absolute inset-0 bg-linear-to-r from-transparent
-                via-[#183d25] via-5% to-[#183d25]`)}
+                via-[#183d25] via-20% md:via-5% to-[#183d25]`)}
             />
             
             <div className={cn(`hidden md:block absolute inset-y-0 right-0 border-l-2 border-dashed 
