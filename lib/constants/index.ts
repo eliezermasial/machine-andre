@@ -36,6 +36,14 @@ export const images = [
     },
 ] as const;
 
+export const machines = [
+    {name: "Tracteurs", alt: "Tracteurs", src: "/tractor1.jpg"},
+    {name: "Mini Tracteurs", alt: "Mini Tracteurs", src: "/mini-tracteur.jpg"},
+    {name: "Motoculteur", alt: "Motoculteur", src: "/motoculteur.jpg"},
+    {name: "outils agricoles", alt: "outils agricoles", src: "/tractor4.jpg"}
+] as const;
+
+
 export const advantages = [
     "years-of-experience",
     "Latest-generation",

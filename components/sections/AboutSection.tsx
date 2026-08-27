@@ -16,11 +16,11 @@ export function AboutSection() {
         <Section className="bg-white text-black max-md:px-3">
             <Container className="">
                 <div className="grid grid-cols-1 gap-25 pt-10 lg:grid-cols-2 lg:items-center lg:gap-16">
-                    <div className="relative scale-107 border-3 border-gold/40 rounded-2xl p-3 pr-0">
+                    <div className="relative scale-107 md:scale-100 border-3 border-gold/40 rounded-2xl p-3 pr-0">
                         <div className="rounded-3xl z-10 zoom-120 bg-white shadow-2xl p-3 pt-1">
                             <div className="grid grid-cols-4 grid-rows-3 gap-1">
                                 {images.map((image, index) => (
-                                    <div key={image.src}
+                                    <div key={image.alt}
                                         className={cn("relative overflow-hidden rounded-md",
                                             "min-h-22.5 sm:min-h-30 ",
                                             image.className

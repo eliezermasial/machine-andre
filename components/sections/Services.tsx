@@ -41,8 +41,8 @@ export function Services () {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
                             {services.map((item,index) => (
-                                <Card key={item.name} className="group p-6 grid bg-white/4 gap-2 border-onPrimary/35
-                                    hover:border-gold/10 hover:bg-white/8 shadow-sm shadow-onPrimary/8 transition-all delay-100 scale-105"
+                                <Card key={item.name} className="group p-6 grid bg-white/4 gap-2 border-onPrimary/45
+                                    hover:border-gold/10 hover:bg-white/8 shadow-sm shadow-onPrimary/8 transition-all delay-100 scale-100"
                                 >
                                     <span className="group-hover:text-gold/60 text-gold/25 font-sans font-bold text-4xl">
                                         {String(index + 1).padStart(2, "0")}
