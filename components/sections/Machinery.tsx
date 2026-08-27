@@ -13,7 +13,7 @@ export function Machinery() {
         <Section className="bg-white max-md:px-3">
             <Container className="">
                 <div className="grid gap-10">
-                    <div className="flex max-md:flex-col justify-between max-md:gap-8">
+                    <div className="flex max-md:flex-col p-2 justify-between gap-5 max-md:gap-8">
                         <div className="scale-100">
                             <span className="text-primary font-semibold font-sans leading-[1.05]">Machinerie</span>
                             <h2 className="text-3xl md:text-5xl text-primary my-5 font-sans font-bold leading-[1.05]">
@@ -25,15 +25,15 @@ export function Machinery() {
                         </div>
                         <div className="flex md:items-end-safe scale-100">
                             <Button className="bg-transparent text-onPrimary border-onPrimary
-                                border-3 hover:bg-onPrimary hover:text-white"
+                                border-3 hover:bg-onPrimary hover:text-white whitespace-nowrap  "
                             >
                                 Voir les machines
                             </Button>
                         </div>
                     </div>
-                    <div className="grid md:grid-cols-3 gap-5">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
                         {machines.map((item) => (
-                            <Card key={item.name} className="group relative h-130 w-full p-0.5 max-w-97.5 border-2
+                            <Card key={item.name} className="group relative h-130 w-full p-0.5 md:max-w-97.5 border-2
                                 overflow-hidden rounded-2xl border-b-0 border-dashed hover:shadow-lg delay-200
                                 border-gold/75 transition-transform shadow-gray-500/45 scale-100 hover:scale-99"
                             >

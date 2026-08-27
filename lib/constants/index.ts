@@ -60,3 +60,10 @@ export const services = [
     {name:"Tools-accessories", descr: "service-Tools"},
     {name:"Land-preparation", descr: "service-Land"},
 ] as const;
+
+export const products = [
+    {name: "semillas", alt: "semillas", src: "/semillas.jpg"},
+    {name: "fertilizantes", alt: "fertilizantes", src: "/graine.jpg"},
+    {name: "abonos", alt: "abonos", src: "/abonos.jpg"},
+    {name: "bioestimulantes", alt: "bioestimulantes", src: "/bioestimulantes.jpg"}
+] as const;

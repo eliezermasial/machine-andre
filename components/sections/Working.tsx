@@ -11,9 +11,9 @@ export function Working() {
         <Section className="bg-cmyk max-md:px-3">
             <Container className="flex flex-col bg-yellow justify-center items-center">
                 <div className="w-full md:w-[70%] scale-105 pt-14 md:pt-10 md:pb-0">
-                    <h3 className="text-3xl md:text-5xl leading-tight text-center text-primary font-sans font-bold">
+                    <h2 className="text-3xl md:text-5xl leading-tight text-center text-primary font-sans font-bold">
                         {t("Working-title")}
-                    </h3>
+                    </h2>
                     <p className="text-text/80 mt-5 text-center text-[18px] md:text-xl font-sans">
                         {t("Working-description")}
                     </p>
