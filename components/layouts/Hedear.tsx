@@ -34,7 +34,7 @@ export function Hedear() {
             )}
         >
             <Container className={cn("flex justify-between w-full ")}>
-                <Logo />
+                <Logo name="maquinaria" lastName="andrés" />
                 <Navigation />
                 <div className="flex justify-baseline items-center gap-3 ">
                     <Button>

@@ -45,7 +45,7 @@ export function Products() {
                         {products.map((item) => (
                             <Card key={item.name} className="group relative h-110 w-full md:max-w-97.5 border
                                 overflow-hidden rounded-2xl border-white/10 delay-200
-                                 transition-transform scale-100 hover:scale-99 hover:border-gold/10"
+                                transition-transform scale-100 hover:scale-99 hover:border-gold/10"
                             >
                                 <Link href={""} className="grid gap-5">
                                     <div className="absolute left-4 top-4 z-10">
