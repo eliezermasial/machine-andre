@@ -40,7 +40,7 @@ export function TechnicalService () {
                                 We diagnose, repair and maintain multi-brand agricultural machinery so your farm keeps running.
                             </p>
                         </div>
-                        <div className="text-primary flex gap-10">
+                        <div className="flex max-md:flex-col text-primary md:gap-10">
                             
                             <ul className="inline-flex flex-col font-semibold capitalize font-sans">
                                 <li className="inline-flex items-center text-sm">

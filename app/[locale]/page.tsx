@@ -4,6 +4,7 @@ import { Services } from "@/components/sections/Services";
 import { Products } from "@/components/sections/Products";
 import { Machinery } from "@/components/sections/Machinery";
 import { AboutSection } from "@/components/sections/AboutSection";
+import { ContactSection } from "@/components/sections/ContactSection";
 import { TechnicalService } from "@/components/sections/TechnicalService";
 
 
@@ -17,6 +18,7 @@ export default function Home () {
             <Machinery />
             <TechnicalService />
             <Products />
+            <ContactSection />
         </>
     )
 }

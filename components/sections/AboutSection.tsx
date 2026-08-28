@@ -15,7 +15,7 @@ export function AboutSection() {
     return (
         <Section className="bg-white text-black max-md:px-3">
             <Container className="">
-                <div className="grid grid-cols-1 gap-25 pt-10 lg:grid-cols-2 lg:items-center lg:gap-16">
+                <div className="grid grid-cols-1 gap-35 md:gap-25 max-md:py-20 pt-10 lg:grid-cols-2 lg:items-center lg:gap-16">
                     <div className="relative scale-107 md:scale-100 border-3 border-gold/40 rounded-2xl p-3 pr-0">
                         <div className="rounded-3xl z-10 zoom-120 bg-white shadow-2xl p-3 pt-1">
                             <div className="grid grid-cols-4 grid-rows-3 gap-1">
@@ -52,7 +52,7 @@ export function AboutSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="relative md:pl-10 scale-107 md:105 ">
+                    <div className="relative md:pl-10 scale-107 md:scale-100 ">
                         <div className="flex items-center gap-3">
                             <span className="text-xs font-sans font-bold uppercase tracking-[0.25em] text-onPrimary">
                                 {t("WHO-WE-ARE")} ?
