@@ -52,7 +52,7 @@ export function AboutSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="relative md:pl-10 scale-105 ">
+                    <div className="relative md:pl-10 scale-107 md:105 ">
                         <div className="flex items-center gap-3">
                             <span className="text-xs font-sans font-bold uppercase tracking-[0.25em] text-onPrimary">
                                 {t("WHO-WE-ARE")} ?

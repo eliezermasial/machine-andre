@@ -7,7 +7,7 @@ export function Footer() {
     return (
         <footer className="bg-primary py-10">
             <Section className="max-md:px-3">
-                <Container className="grid gap-10">
+                <Container className="grid gap-10 max-md:scale-105">
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10
                         text-sm font-normal font-sans text-white/75"
                     >

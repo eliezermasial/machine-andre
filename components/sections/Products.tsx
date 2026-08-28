@@ -13,7 +13,7 @@ export function Products() {
     return(
         <Section className="bg-primary max-md:px-3">
             <Container>
-                <div className=" py-10 md:py-20">
+                <div className="max-md:scale-107 py-10 md:py-20">
                     <div className="flex max-lg:flex-col justify-between max-md:gap-8 mb-10">
                         <div className="scale-100">
                             <span className="text-gold font-semibold font-sans leading-[1.05]">
