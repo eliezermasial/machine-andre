@@ -14,7 +14,7 @@ export function Products() {
         <Section className="bg-primary max-md:px-3">
             <Container>
                 <div className=" py-10 md:py-20">
-                    <div className="flex max-md:flex-col justify-between max-md:gap-8 mb-10">
+                    <div className="flex max-lg:flex-col justify-between max-md:gap-8 mb-10">
                         <div className="scale-100">
                             <span className="text-gold font-semibold font-sans leading-[1.05]">
                                 Produits
@@ -27,7 +27,7 @@ export function Products() {
                                 </span>
                             </h2>
                         </div>
-                        <div className="flex flex-col md:justify-center gap-10 md:items-end md:text-end scale-100">
+                        <div className="flex flex-col lg:justify-center gap-10 lg:items-end lg:text-end scale-100">
                             <p className=" md:max-w-md text-lg whitespace-normal text-white/75">
                                 Un équipement moderne et robuste, conçu pour offrir des performances maximales.
                             </p>

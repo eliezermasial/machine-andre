@@ -11,7 +11,7 @@ export function Machinery() {
 
     return(
         <Section className="bg-white max-md:px-3">
-            <Container className="">
+            <Container>
                 <div className="grid gap-10">
                     <div className="flex max-md:flex-col p-2 justify-between gap-5 max-md:gap-8">
                         <div className="scale-100">

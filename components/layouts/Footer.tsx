@@ -1,14 +1,16 @@
-import { Link } from "@/i18n/navigation";
-import { Container } from "../ui/Container";
 import { Logo } from "../ui/Logo";
 import { Section } from "../ui/Section";
+import { Link } from "@/i18n/navigation";
+import { Container } from "../ui/Container";
 
 export function Footer() {
     return (
         <footer className="bg-primary py-10">
-            <Section>
+            <Section className="max-md:px-3">
                 <Container className="grid gap-10">
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 text-white/75 text-sm font-normal font-sans">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10
+                        text-sm font-normal font-sans text-white/75"
+                    >
                         <div className="flex flex-col gap-8">
                             <div className="inline-flex items-center gap-3">
                                 <Logo className="bg-onPrimary mt-0" />
