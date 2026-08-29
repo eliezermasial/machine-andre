@@ -10,9 +10,9 @@ import { Container } from "../ui/Container";
 export function Machinery() {
 
     return(
-        <Section className="bg-white max-md:px-3">
+        <Section className="bg-white max-md:px-3 overflow-x-hidden">
             <Container>
-                <div className="grid max-md:scale-107 max-md:py-20 gap-10">
+                <div className="grid max-md:scale-107 overflow-x-hidden max-md:py-20 gap-10">
                     <div className="flex max-md:flex-col p-2 justify-between gap-5 max-md:gap-8">
                         <div className="scale-100">
                             <span className="text-primary font-semibold font-sans leading-[1.05]">Machinerie</span>

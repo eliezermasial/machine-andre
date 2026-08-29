@@ -20,9 +20,9 @@ export function ContactSection () {
     };
 
     return (
-        <Section className="bg-primary max-md:px-3">
+        <Section className="bg-primary overflow-x-hidden max-md:px-3">
             <Container className="p-20">
-                <div className="flex max-md:flex-col max-md:scale-105 md:justify-between border border-white rounded-2xl">
+                <div className="flex overflow-x-hidden max-md:flex-col max-md:scale-105 md:justify-between border border-white rounded-2xl">
                     <div className="inline-flex px-5 flex-col lg:w-[65%] md:border-r border-white/55
                         md:px-10 py-15 justify-center text-white gap-10"
                     >

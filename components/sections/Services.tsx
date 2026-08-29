@@ -12,7 +12,7 @@ export function Services () {
     const t = useTranslations("Section-services");
     
     return (
-        <section className="bg-white sm:py-15 lg:py-20">
+        <section className="bg-white sm:py-15 lg:py-20 overflow-x-hidden">
             <div className="bg-primary [clip-path:polygon(0_0,100%_0,100%_91%,0_100%)]
                 md:[clip-path:polygon(0_0,100%_0,100%_90%,0_100%)] max-md:px-3 py-10 md:py-20"
             >
@@ -27,7 +27,7 @@ export function Services () {
                             ease: [0.215, 0.610, 0.355, 1.000],
                         }}
                     >
-                    <div className="flex flex-col gap-15 max-md:scale-107 py-20 md:gap-20">
+                    <div className="flex flex-col gap-15 overflow-x-hidden max-md:scale-107 py-20 md:gap-20">
                         <div className="flex gap-5 max-md:flex-col">
                             <div className="scale-100">
                                 <span className="text-gold font-bold font-sans leading-[1.05]">{t("annonce")}</span>

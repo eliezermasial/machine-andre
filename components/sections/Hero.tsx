@@ -17,7 +17,7 @@ export function Hero() {
     return (
         <section className={cn(` 
             relative h-full px-6 overflow-hidden border-r-4 border-t[50%]
-            max-md:px-3 border-dashed border-gold font-sans pt-15
+            max-md:px-3 border-dashed border-gold font-sans pt-15 overflow-x-hidden
         `)}
         >
             <div className={cn(`absolute inset-0 bg-linear-to-r from-transparent
