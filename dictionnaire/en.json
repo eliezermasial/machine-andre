@@ -55,6 +55,21 @@
     "service-seeds": "Selected products for every crop",
     "Tools-accessories": "Tools & accessories",
     "service-Tools": "All complementary equipment."
+  },
+    "ContactSection": {
+    "title": "Need a quote or advice?",
+    "sous-title": "Send us your request",
+    "description": "We are here to help you. ",
+    "phone": "Téléphone",
+    "Address": "Address",
+    "Opening-hours": "Opening hours",
+    "off": "Monday to Friday, 9:00 AM – 6:00 PM",
+    "on": "Saturdays by appointment",
+    "message-title": "Thank you for contacting us",
+    "soubmited-message": "We have received your request. We will get back to you as soon as possible.",
+    "selected": "What do you need",
+    "btn-submit": "Request a quote",
+    "call": "call now"
   }
 
 }

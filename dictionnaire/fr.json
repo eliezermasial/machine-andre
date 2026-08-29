@@ -55,6 +55,21 @@
     "service-seeds": "Produits sélectionnés pour chaque culture.",
     "Tools-accessories": "Outils et accessoires",
     "service-Tools": "Tout l'équipement complémentaire."
+  },
+  "ContactSection": {
+    "title": "Besoin d'un devis ou d'un conseil?",
+    "sous-title": "Envoyez-nous votre demande",
+    "description": "Nous sommes là pour vous aider.",
+    "phone": "Téléphone",
+    "Address": "Addresse",
+    "Opening-hours": "Horaires",
+    "off": "Lundi au vendredi de 9h00 à 18h00",
+    "on": "Samedi sur rendez-vous",
+    "message-title": "Merci de nous avoir contactés",
+    "soubmited-message": "Nous avons bien reçu votre demande. Nous vous recontacterons dans les plus brefs délais.",
+    "selected": "De quoi avez-vous besoin ?",
+    "btn-submit": "Demander un devis",
+    "call": "Appeler maintenant"
   }
 
 

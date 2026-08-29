@@ -43,7 +43,6 @@ export const machines = [
     {name: "outils agricoles", alt: "outils agricoles", src: "/tractor4.jpg"}
 ] as const;
 
-
 export const advantages = [
     "years-of-experience",
     "Latest-generation",
@@ -66,4 +65,15 @@ export const products = [
     {name: "fertilizantes", alt: "fertilizantes", src: "/graine.jpg"},
     {name: "abonos", alt: "abonos", src: "/abonos.jpg"},
     {name: "bioestimulantes", alt: "bioestimulantes", src: "/bioestimulantes.jpg"}
+] as const;
+
+export const arraySelectedOption = [
+    "Select enquiry type",
+    "Buy machinery",
+    "Rental",
+    "Repair",
+    "Land preparation",
+    "Agricultural products",
+    "Financing",
+    "Other"
 ] as const;

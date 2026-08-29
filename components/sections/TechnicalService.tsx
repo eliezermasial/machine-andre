@@ -10,8 +10,7 @@ export function TechnicalService () {
         <Section className="bg-white max-md:px-3">
             <Container>
                 <div className="flex max-lg:flex-col max-md:scale-107 max-md:my-15 justify-between lg:gap-15 shadow-xl">
-                    <div className="relative scale-100 w-full h-115
-                    border-r-2 border-dashed border-primary/75">
+                    <div className="relative scale-100 w-full h-115 border-r-2 border-dashed border-primary/75">
                         <Image
                             src="/mini-tracteur.jpg"
                             alt="image assistance"

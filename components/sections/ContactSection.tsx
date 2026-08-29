@@ -1,21 +1,24 @@
+"use client";
+
+import { useState } from "react";
 import { Button } from "../ui/Button";
 import { Section } from "../ui/Section";
+import { useTranslations } from "next-intl";
 import { Container } from "../ui/Container";
-import { MapPinCheckInside, Phone, Mail, Clock } from "lucide-react";
+import { arraySelectedOption } from "@/lib/constants";
+import { MapPinCheckInside, Phone, Mail, Clock, Check } from "lucide-react";
 
-
-const arraySelectedOption = [
-    "Select enquiry type",
-    "Buy machinery",
-    "Rental",
-    "Repair",
-    "Land preparation",
-    "Agricultural products",
-    "Financing",
-    "Other"
-];
 
 export function ContactSection () {
+
+    const t = useTranslations("ContactSection");
+    const [isSubmited, setIsSubmited] = useState<boolean>(false);
+
+    const handleSubmited = (e: React.SubmitEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setIsSubmited(true)
+    };
+
     return (
         <Section className="bg-primary max-md:px-3">
             <Container className="p-20">
@@ -28,10 +31,10 @@ export function ContactSection () {
                                 contact
                             </span>
                             <h2 className="text-3xl my-5 font-sans font-bold leading-[1.15]">
-                                {"Besoin d'un devis ou d'un conseil ?"}
+                                {t("title")}
                             </h2>
                             <span className="text-white/65 text-base whitespace-normal">
-                                Nous sommes là pour vous aider.
+                                {t("description")}
                             </span>
                         </div>
                         <div className="flex flex-col text-white/85 gap-6">
@@ -42,7 +45,7 @@ export function ContactSection () {
                                     <MapPinCheckInside size={20} className="text-gold/85" />
                                 </div>
                                 <div className="inline-flex gap-1 text-sm flex-col">
-                                    <span className="text-gold font-semibold">Adresse</span>
+                                    <span className="text-gold font-semibold">{t("Address")}</span>
                                     <span>Av. de Dolores, 31</span>
                                     <span>03203 Elche, Alicante</span>
                                 </div>
@@ -53,7 +56,7 @@ export function ContactSection () {
                                     <Phone size={20} className="text-gold/85" />
                                 </div>
                                 <div className="inline-flex gap-1 text-sm flex-col">
-                                    <span className="text-gold font-semibold">Téléphone</span>
+                                    <span className="text-gold font-semibold">{t("phone")} </span>
                                     <span>614 651 150</span>
                                 </div>
                             </div>
@@ -73,38 +76,57 @@ export function ContactSection () {
                                     <Clock size={20} className="text-gold/85"/>
                                 </div>
                                 <div className="inline-flex gap-1 text-sm flex-col">
-                                    <span>Horaires Lundi au vendredi de 9h00 à 18h00</span>
-                                    <span>Samedi sur rendez-vous</span>
+                                    <span className="text-gold font-semibold">{t("Opening-hours")}</span>
+                                    <span>{t("off")} </span>
+                                    <span>{t("on")}</span>
                                 </div>
                             </div>
                         </div>
                         <div className="inline-flex gap-3">
                             <Button className="bg-onPrimary/75">
-                                Appeler maintenant
+                                {t("call")}
                             </Button>
-                            <Button className="bg-onPrimary hover:bg-onPrimary/80">
+                            <Button className="bg-green-600 capitalize hover:bg-onPrimary/80">
                                 WhatsApp
                             </Button>
                         </div>
                     </div>
+
                     <div className="h-2 w-full bg-linear-to-r from-primary via-gold/85
                         to-primary md:h-200 md:w-2 md:bg-linear-to-b"
                     />
+
                     <div className="flex flex-col max-md:rounded-b-2xl md:rounded-r-2xl gap-10
-                        w-full px-5 md:px-10 py-15 bg-cmyk/95 text-black"
+                        w-full px-5 md:px-10 py-8 md:py-15 bg-cmyk/95 text-black"
                     >
                         <div>
-                            <h3 className="text-3xl mb-3 font-sans text-primary font-bold leading-[1.15]">
-                                Envoyez-nous votre demande
+                            <h3 className="text-2xl my-3 font-sans text-primary font-bold leading-[1.15]">
+                                {t("sous-title")}
                             </h3>
                             <span className="text-text text-base whitespace-normal">
-                                Nous sommes là pour vous aider.
+                                {t("description")}
                             </span>
                         </div>
-                        <form className="flex flex-col p-5 md:px-10 md:py-10 gap-5 text-onPrimary/85
-                            font-bold font-sans text-sm bg-white capitalize rounded-xl"
+                        {isSubmited ? (
+                            <div className="bg-white rounded-xl md:p-8 gap-5 p-5">
+                                <div className="bg-gray-200/55 border border-primary/15
+                                    rounded-xl p-8 gap-2 flex flex-col items-center">
+                                    <div className="bg-onPrimary p-3 rounded-full">
+                                        <Check size={20} className="text-white" />
+                                    </div>
+                                    <h3 className="text-xl font-sans text-primary font-bold leading-[1.15]">
+                                        {t("message-title")}
+                                    </h3>
+                                    <span className="text-center font-medium text-sm text-black/75">
+                                        {t("soubmited-message")}
+                                    </span>
+                                </div>
+                            </div>
+                        ): (
+                        <form onSubmit={handleSubmited} className="flex flex-col md:px-10 text-onPrimary/85
+                            font-bold font-sans text-sm bg-white capitalize rounded-xl gap-5 md:py-10 p-5"
                         >
-                            <input type="text" className="hidden" value={"fr"} name="locale" />
+                            <input type="text" className="hidden" name="locale" />
                             <ul className="inline-flex max-md:flex-col justify-between gap-5 lg:gap-10">
                                 <li className="inline-flex flex-col w-full gap-3">
                                     <label className="">Name</label>
@@ -113,20 +135,20 @@ export function ContactSection () {
                                     />
                                 </li>
                                 <li className="inline-flex flex-col w-full gap-2">
-                                    <label>prenom</label>
-                                    <input type="text" name="prenom" className="w-full p-4 bg-cmyk/15 border
+                                    <label>{t("phone")} </label>
+                                    <input type="number" name="prenom" required className="w-full p-4 bg-cmyk/15 border
                                         border-text/15 rounded-2xl focus:border-primary/85 focus:outline-none"
                                     />
                                 </li>
                             </ul>
                             <div className="inline-flex flex-col gap-3">
                                 <label>Email</label>
-                                <input type="mail" value="" name="mail" className="w-full p-4 bg-cmyk/15 border
+                                <input type="text" name="mail" required className="w-full p-4 bg-cmyk/15 border
                                     border-text/15 rounded-2xl focus:border-primary/85 focus:outline-none"
                                 />
                             </div>
                             <div className="inline-flex flex-col gap-3">
-                                <label>What do you need?</label>
+                                <label>{t("selected")}</label>
                                 <select id="tipo" name="tipo" required 
                                     className="w-full p-4 bg-cmyk/15 border outline-none transition-all
                                     border-text/15 text-black/75 font-normal rounded-2xl focus:border-primary/85
@@ -146,14 +168,15 @@ export function ContactSection () {
                                 >
                                 </textarea>
                             </div>
-                            <div>
-                                <button type="submit" className="inline-flex items-center bg-onPrimary text-xs xs:text-sm md:text-base
-                                    font-sans px-6 py-3 text-white/85 rounded-lg hover:bg-primary transition-all font-semibold"
+                            <div className="">
+                                <button type="submit" className="inline-flex max-md:w-full items-center bg-onPrimary text-xs xs:text-sm md:text-base
+                                    font-sans px-6 py-3 text-white/85 rounded-xl hover:bg-primary transition-all font-semibold"
                                 >
-                                    Request a quote
+                                    {t("btn-submit")}
                                 </button>
                             </div>
                         </form>
+                        )}
                     </div>
                 </div>
             </Container>
