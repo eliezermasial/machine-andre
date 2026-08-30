@@ -22,7 +22,7 @@ export function ContactSection () {
     return (
         <Section className="bg-primary max-md:px-3">
             <Container>
-                <div className="flex max-lg:flex-col md:justify-between max-md:scale-105
+                <div className="flex max-lg:flex-col md:justify-between
                     border border-white rounded-2xl"
                 >
                     <div className="inline-flex px-5 flex-col lg:w-[65%] md:border-r border-white/55

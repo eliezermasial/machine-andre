@@ -13,7 +13,7 @@ export function Products() {
     return(
         <Section className="bg-primary max-md:px-3 overflow-x-hidden">
             <Container>
-                <div className="overflow-x-hidden max-md:scale-105 py-10 md:py-20">
+                <div className="overflow-x-hidden max-md:scale-105 py-15 md:py-20">
                     <div className="flex max-lg:flex-col justify-between max-md:gap-8 mb-10">
                         <div className="">
                             <span className="text-gold font-semibold font-sans leading-[1.05]">
