@@ -3,14 +3,17 @@ import { Dot } from "lucide-react";
 import { Button } from "../ui/Button";
 import { Section } from "../ui/Section";
 import { Container } from "../ui/Container";
+import { useTranslations } from "next-intl";
 
 
 export function TechnicalService () {
+    const t = useTranslations("TechnicalService");
+
     return (
         <Section className="bg-white max-md:px-3">
             <Container>
                 <div className="flex max-lg:flex-col overflow-x-hidden max-md:scale-105 max-md:my-15
-                    justify-between lg:gap-15 shadow-xl"
+                    justify-between lg:gap-15 shadow-2xl"
                 >
                     <div className="relative w-full h-115 border-r-2 border-dashed border-primary/75">
                         <Image
@@ -32,13 +35,13 @@ export function TechnicalService () {
                         max-lg:border-l-4 rounded-l-lg max-lg:border-gold md:pr-5">
                         <div className="inline-block">
                             <span className="text-xs font-sans font-bold uppercase tracking-[0.25em] text-onPrimary">
-                                Specialised technical service
+                                {t("sous-title")}
                             </span>
-                            <h2 className="text-3xl my-3 md:text-5xl font-sans font-bold leading-[1.15] text-primary">
-                                Less downtime. More time working.
+                            <h2 className="text-3xl my-3 md:text-5xl font-sans font-bold leading-[0.95] text-primary">
+                                {t("title")}
                             </h2>
-                            <p className=" md:max-w-md text-base whitespace-normal text-text">
-                                We diagnose, repair and maintain multi-brand agricultural machinery so your farm keeps running.
+                            <p className=" md:max-w-full text-base whitespace-normal text-text">
+                                {t("description")}
                             </p>
                         </div>
                         <div className="flex max-md:flex-col text-primary md:gap-10">
@@ -46,35 +49,35 @@ export function TechnicalService () {
                             <ul className="inline-flex flex-col font-semibold capitalize font-sans">
                                 <li className="inline-flex items-center text-sm">
                                     <Dot size={30} className="text-onPrimary" />
-                                    <span>Professional diagnostics</span>
+                                    <span>{t("Professional")}</span>
                                 </li>
                                 <li className="inline-flex items-center text-sm">
                                     <Dot size={30} className="text-onPrimary" />
-                                    <span>Mechanical repairs</span>
+                                    <span>{t("Mechanical")} </span>
                                 </li>
                                 <li className="inline-flex items-center text-sm">
                                     <Dot size={30} className="text-onPrimary" />
-                                    <span>Hydraulic repairs</span>
+                                    <span>{t("Hydraulic")} </span>
                                 </li>
                             </ul>
                             <ul className="inline-flex flex-col font-semibold capitalize font-sans">
                                 <li className="inline-flex items-center text-sm">
                                     <Dot size={30} className="text-onPrimary" />
-                                    <span>Electronic repairs</span>
+                                    <span>{t("Electronic")} </span>
                                 </li>
                                 <li className="inline-flex items-center text-sm">
                                     <Dot size={30} className="text-onPrimary" />
-                                    <span>Preventive maintenance</span>
+                                    <span>{t("Preventive")} </span>
                                 </li>
                                 <li className="inline-flex items-center text-sm">
                                     <Dot size={30} className="text-onPrimary" />
-                                    <span>Spare parts</span>
+                                    <span>{t("Spare-parts")}</span>
                                 </li>
                             </ul>
                         </div>
                         <div>
                             <Button className="inline-flex gap-1">
-                                <span>Request assistance</span>
+                                <span>{t("btn")}</span>
                                 <span>→</span>
                             </Button>
                         </div>

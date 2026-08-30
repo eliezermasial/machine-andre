@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MAQUINARIA | ANDRÉS",
+  title: "maquinaria | andrés",
   description: "vent de services agricols",
 };
 

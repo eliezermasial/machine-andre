@@ -70,9 +70,32 @@
     "selected": "De quoi avez-vous besoin ?",
     "btn-submit": "Demander un devis",
     "call": "Appeler maintenant"
+  },
+  "machinery": {
+    "title": "Matériel prêt à travailler",
+    "description": "Équipements modernes, robustes et préparés pour offrir un rendement maximal.",
+    "spot-title": "Machinery",
+    "tractors": "tracteurs",
+    "tractor-descr": "Puissance et polyvalence pour tout type d'exploitation.",
+    "btn": "Voir le matériel",
+    "btn-tractor": "Voir les équipements",
+    "mini-tractors": "Mini tracteurs",
+    "Mini-tractors-descr": "Parfaits pour les vergers et les espaces réduits.",
+    "trillers": "Motoculteurs",
+    "trillers-descr": "Pour potagers et petites parcelles.",
+    "Agricultural-implements": "Outillage agricole",
+    "Agricultural-descr": "Équipements de travail du sol et de préparation des terres."
+  },
+    "TechnicalService": {
+    "title": "Moins de temps à l'arrêt. Plus de temps au travail.",
+    "description": "Nous diagnostiquons, réparons et entretenons du matériel agricole multimarque pour que votre exploitation continue de fonctionner.",
+    "sous-title": "Service technique spécialisé",
+    "Professional": "Diagnostic professionnel",
+    "Hydraulic": "Réparations hydrauliques",
+    "Preventive": "Entretien préventif",
+    "Mechanical": "Réparations mécaniques",
+    "Electronic": "Réparations électroniques",
+    "Spare-parts": "Pièces de rechange",
+    "btn": "Demander une assistance"
   }
-
-
-
-
 }

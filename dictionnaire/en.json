@@ -60,7 +60,7 @@
     "title": "Need a quote or advice?",
     "sous-title": "Send us your request",
     "description": "We are here to help you. ",
-    "phone": "Téléphone",
+    "phone": "Phone",
     "Address": "Address",
     "Opening-hours": "Opening hours",
     "off": "Monday to Friday, 9:00 AM – 6:00 PM",
@@ -70,6 +70,32 @@
     "selected": "What do you need",
     "btn-submit": "Request a quote",
     "call": "call now"
+  },
+  "machinery": {
+    "title": "Machinery ready to work",
+    "description": "Modern, robust equipment prepared to deliver maximum performance.",
+    "spot-title": "Machinery",
+    "tractors": "tractors",
+    "tractor-descr": "Power and versatility for every type of farm.",
+    "btn": "View machinery",
+    "btn-tractor": "View equipment",
+    "mini-tractors": "Mini tractors",
+    "Mini-tractors-descr": "Perfect for orchards and small spaces.",
+    "trillers": "trillers",
+    "trillers-descr": "For vegetable gardens and small plots.",
+    "Agricultural-implements": "Agricultural implements",
+    "Agricultural-descr": "Tillage and soil preparation equipment."
+  },
+  "TechnicalService": {
+    "title": "Less downtime. More time working.",
+    "description": "We diagnose, repair and maintain multi-brand agricultural machinery so your farm keeps running.",
+    "sous-title": "Servicio técnico Specialised technical service",
+    "Professional": "Professional diagnostics",
+    "Hydraulic": "Hydraulic repairs",
+    "Preventive": "Preventive maintenance",
+    "Mechanical": "Mechanical repairs",
+    "Electronic": "Electronic repairs",
+    "Spare-parts": "Spare parts",
+    "btn": "Request assistance"
   }
-
 }

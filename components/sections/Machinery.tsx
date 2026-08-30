@@ -5,9 +5,11 @@ import { Section } from "../ui/Section";
 import { Link } from "@/i18n/navigation";
 import { machines } from "@/lib/constants";
 import { Container } from "../ui/Container";
+import { useTranslations } from "next-intl";
 
 
 export function Machinery() {
+    const t = useTranslations("machinery");
 
     return(
         <Section className="bg-white max-md:px-3 overflow-x-hidden">
@@ -17,17 +19,17 @@ export function Machinery() {
                         <div className="scale-100">
                             <span className="text-primary font-semibold font-sans leading-[1.05]">Machinerie</span>
                             <h2 className="text-3xl md:text-5xl text-primary my-5 font-sans font-bold leading-[1.05]">
-                                Machines prêtes à fonctionner
+                                {t("title")}
                             </h2>
                             <p className="md:max-w-xl text-md text-text">
-                                Un équipement moderne et robuste, conçu pour offrir des performances maximales.
+                                {t("description")}
                             </p>
                         </div>
                         <div className="flex md:items-end-safe scale-100">
                             <Button className="bg-transparent text-onPrimary border-onPrimary
                                 border-3 hover:bg-onPrimary hover:text-white whitespace-nowrap  "
                             >
-                                Voir les machines
+                                {t("btn")}
                             </Button>
                         </div>
                     </div>
@@ -51,21 +53,21 @@ export function Machinery() {
                                         <span className="inline-flex bg-gold rounded-md font-bold px-2 py-1
                                             tracking-[0.12em] text-[11px] uppercase text-primary"
                                         >
-                                            {item.name}
+                                            {t(item.name)}
                                         </span>
                                     </div>
 
                                     <div className="absolute inset-x-0 bottom-0 z-10 p-5">
                                         <h3 className="text-2xl font-bold font-sans capitalize leading-tight text-white">
-                                            {item.name}
+                                            {t(item.name)}
                                         </h3>
                                         <p className="mt-3 max-w-85 text-sm leading-relaxed text-white/75">
-                                            Matériel de travail du sol et de préparation des sols.
+                                            {t(item.alt)}
                                         </p>
                                         <div className="group/link mt-3 inline-flex items-center gap-1
                                             font-bold font-sans text-sm uppercase tracking-wide text-gold/95"
                                         >
-                                            <span>{"Voir l'équipement"}</span>
+                                            <span>{t("btn-tractor")}</span>
                                             <span className="group-hover/link:translate-x-1 transition-transform duration-300">
                                                 →
                                             </span>

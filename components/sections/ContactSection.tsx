@@ -153,7 +153,7 @@ export function ContactSection () {
                                 <label>{t("selected")}</label>
                                 <select id="tipo" name="tipo" required 
                                     className="w-full p-2 md:p-4 bg-cmyk/15 border outline-none transition-all
-                                    border-text/15 text-text font-normal font-normal rounded-xl focus:border-primary/85
+                                    border-text/15 text-text font-normal rounded-xl focus:border-primary/85
                                     focus:outline-none"
                                 >
                                     {arraySelectedOption.map((option) => (
@@ -165,8 +165,8 @@ export function ContactSection () {
                                 <label>message</label>
                                 <textarea id="message" name="message" rows={6}
                                     placeholder="Décrivez votre demande..." required
-                                    className="w-full p-2 md:p-4 bg-cmyk/15 border outline-none text-black/75 font-normal
-                                    border-text/15 text-text font-normal rounded-xl focus:border-primary/85 focus:outline-none"
+                                    className="w-full p-2 md:p-4 bg-cmyk/15 border outline-none text-text font-normal
+                                    border-text/15 rounded-xl focus:border-primary/85 focus:outline-none"
                                 >
                                 </textarea>
                             </div>
