@@ -13,9 +13,9 @@ export function Products() {
     return(
         <Section className="bg-primary max-md:px-3 overflow-x-hidden">
             <Container>
-                <div className="max-md:scale-107 overflow-x-hidden py-10 md:py-20">
+                <div className="overflow-x-hidden max-md:scale-105 py-10 md:py-20">
                     <div className="flex max-lg:flex-col justify-between max-md:gap-8 mb-10">
-                        <div className="scale-100">
+                        <div className="">
                             <span className="text-gold font-semibold font-sans leading-[1.05]">
                                 Produits
                             </span>
@@ -27,8 +27,8 @@ export function Products() {
                                 </span>
                             </h2>
                         </div>
-                        <div className="flex flex-col lg:justify-center gap-10 lg:items-end lg:text-end scale-100">
-                            <p className=" md:max-w-md text-lg whitespace-normal text-white/75">
+                        <div className="flex flex-col lg:justify-center gap-10 lg:items-end lg:text-end">
+                            <p className="md:max-w-md text-lg whitespace-normal text-white/75">
                                 Un équipement moderne et robuste, conçu pour offrir des performances maximales.
                             </p>
                             <Button className="hidden md:flex group bg-transparent border-2 border-white/85
@@ -45,7 +45,7 @@ export function Products() {
                         {products.map((item) => (
                             <Card key={item.name} className="group relative h-110 w-full md:max-w-97.5 border
                                 overflow-hidden rounded-2xl border-white/10 delay-200
-                                transition-transform scale-100 hover:scale-99 hover:border-gold/10"
+                                transition-transform hover:scale-99 hover:border-gold/10"
                             >
                                 <Link href={""} className="grid gap-5">
                                     <div className="absolute left-4 top-4 z-10">

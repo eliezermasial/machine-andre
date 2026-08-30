@@ -11,7 +11,7 @@ export const images = [
     },
     {
         src: "/tractor3.jpg",
-        alt: "Équipement agricole",
+        alt: "Agricol Équipement",
         className: "col-span-1 row-span-1",
     },
     {
@@ -25,7 +25,7 @@ export const images = [
         className: "col-span-1 row-span-1",
     },
     {
-        src: "/tractor2.jpg",
+        src: "/tractor6.jpg",
         alt: "Pulvérisateur agricole",
         className: "col-span-2 row-span-1",
     },

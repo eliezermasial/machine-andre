@@ -7,9 +7,9 @@ export function Footer() {
     return (
         <footer className="bg-primary py-10">
             <Section className="max-md:px-3">
-                <Container className="grid gap-10 max-md:scale-105">
+                <Container className="grid gap-10">
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10
-                        text-sm font-normal font-sans text-white/75"
+                        text-sm max-md:scale-105 font-normal font-sans text-white/75"
                     >
                         <div className="flex flex-col gap-8">
                             <div className="inline-flex items-center gap-3">
@@ -74,7 +74,7 @@ export function Footer() {
 
                     <hr className="text-white/25" />
 
-                    <div className="flex max-md:flex-col max-md:gap-5 max-md:scale-90 items-center md:justify-between text-sm ">
+                    <div className="flex max-md:flex-col max-md:scale-105 max-md:gap-5 items-center md:justify-between text-sm ">
                         <span className="text-white/75">© 2026 Maquinaria Andrés</span>
                         <div className="flex justify-between gap-8">
                             <Link href={""} className="text-white/75 capitalize transition-all delay-100 hover:text-white/95">Mentions légales</Link>

@@ -27,9 +27,9 @@ export function Services () {
                             ease: [0.215, 0.610, 0.355, 1.000],
                         }}
                     >
-                    <div className="flex flex-col gap-15 overflow-x-hidden max-md:scale-107 py-20 md:gap-20">
+                    <div className="flex flex-col gap-15 overflow-x-hidden max-md:scale-105 py-20 md:gap-20">
                         <div className="flex gap-5 max-md:flex-col">
-                            <div className="scale-100">
+                            <div>
                                 <span className="text-gold font-bold font-sans leading-[1.05]">{t("annonce")}</span>
                                 <h2 className="text-3xl md:text-5xl mt-5 font-sans font-bold leading-[1.05] text-white">
                                     {t("title")}
@@ -41,8 +41,8 @@ export function Services () {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
                             {services.map((item,index) => (
-                                <Card key={item.name} className="group p-6 grid bg-white/4 gap-2 border-onPrimary/45
-                                    hover:border-gold/10 hover:bg-white/8 shadow-sm shadow-onPrimary/8 transition-all delay-100 scale-100"
+                                <Card key={item.name} className="group p-6 grid bg-white/4 gap-2 border-onPrimary/45 shadow-sm
+                                    hover:border-gold/10 hover:bg-white/8 shadow-onPrimary/8 transition-all delay-100"
                                 >
                                     <span className="group-hover:text-gold/60 text-gold/25 font-sans font-bold text-4xl">
                                         {String(index + 1).padStart(2, "0")}

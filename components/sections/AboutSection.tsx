@@ -13,10 +13,10 @@ export function AboutSection() {
     const t = useTranslations("About-us");
 
     return (
-        <Section className="bg-white text-black overflow-x-hidden max-md:px-3">
-            <Container className="">
+        <Section className="bg-white max-md:px-3">
+            <Container>
                 <div className="grid grid-cols-1 gap-35 md:gap-25 max-md:py-20 pt-10 lg:grid-cols-2 lg:items-center lg:gap-16">
-                    <div className="relative overflow-x-hidden scale-107 md:scale-100 border-3 border-gold/40 rounded-2xl p-3 pr-0">
+                    <div className="relative max-md:scale-105 border-3 border-gold/40 rounded-2xl p-3 pr-0">
                         <div className="rounded-3xl z-10 zoom-120 bg-white shadow-2xl p-3 pt-1">
                             <div className="grid grid-cols-4 grid-rows-3 gap-1">
                                 {images.map((image, index) => (
@@ -52,7 +52,7 @@ export function AboutSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="relative md:pl-10 scale-107 md:scale-100 ">
+                    <div className="relative md:pl-10 max-md:scale-105 ">
                         <div className="flex items-center gap-3">
                             <span className="text-xs font-sans font-bold uppercase tracking-[0.25em] text-onPrimary">
                                 {t("WHO-WE-ARE")} ?
@@ -61,9 +61,9 @@ export function AboutSection() {
                         <h2 className="text-3xl my-5 md:text-5xl font-sans font-bold leading-[1.15] text-primary">
                             {t("title")}
                             <br />
-                            <span className="text-onPrimary mt-2">{t("sous-title")} </span>
+                            <span className="text-onPrimary">{t("sous-title")} </span>
                         </h2>
-                        <p className="mt-7 max-w-xl text-md font-medium leading-7
+                        <p className="max-w-xl text-md font-medium leading-7
                             text-text font-semidbold sm:text-lg sm:leading-8"
                         >
                             {t("description")}

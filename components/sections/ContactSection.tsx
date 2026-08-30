@@ -20,11 +20,13 @@ export function ContactSection () {
     };
 
     return (
-        <Section className="bg-primary overflow-x-hidden max-md:px-3">
-            <Container className="p-20">
-                <div className="flex overflow-x-hidden max-md:flex-col max-md:scale-105 md:justify-between border border-white rounded-2xl">
+        <Section className="bg-primary max-md:px-3">
+            <Container>
+                <div className="flex max-lg:flex-col md:justify-between max-md:scale-105
+                    border border-white rounded-2xl"
+                >
                     <div className="inline-flex px-5 flex-col lg:w-[65%] md:border-r border-white/55
-                        md:px-10 py-15 justify-center text-white gap-10"
+                        md:px-10 py-10 justify-center text-white gap-6"
                     >
                         <div>
                             <span className="text-xs font-sans font-bold uppercase tracking-[0.25em] text-gold">
@@ -37,7 +39,7 @@ export function ContactSection () {
                                 {t("description")}
                             </span>
                         </div>
-                        <div className="flex flex-col text-white/85 gap-6">
+                        <div className="flex flex-col text-white/85 gap-3">
                             <div className="inline-flex rounded-xl gap-5 w-full bg-white/8 py-4 px-6 border
                                 border-white/15 transition-all delay-100 hover:border-gold/30 hover:bg-white/11"
                             >
@@ -114,7 +116,7 @@ export function ContactSection () {
                                     <div className="bg-onPrimary p-3 rounded-full">
                                         <Check size={20} className="text-white" />
                                     </div>
-                                    <h3 className="text-xl font-sans text-primary font-bold leading-[1.15]">
+                                    <h3 className="text-xl max-md:text-center font-sans text-primary font-bold leading-[1.15]">
                                         {t("message-title")}
                                     </h3>
                                     <span className="text-center font-medium text-sm text-black/75">
@@ -128,30 +130,30 @@ export function ContactSection () {
                         >
                             <input type="text" className="hidden" name="locale" />
                             <ul className="inline-flex max-md:flex-col justify-between gap-5 lg:gap-10">
-                                <li className="inline-flex flex-col w-full gap-3">
-                                    <label className="">Name</label>
-                                    <input type="text" name="name" className="w-full p-4 bg-cmyk/15 border
-                                        border-text/15 rounded-2xl focus:border-primary/85 focus:outline-none"
+                                <li className="inline-flex flex-col w-full gap-2">
+                                    <label>Name</label>
+                                    <input type="text" name="name" required className="w-full p-2 md:p-4 bg-cmyk/15 border
+                                        border-text/15 rounded-xl text-text font-normal focus:border-primary/85 focus:outline-none"
                                     />
                                 </li>
                                 <li className="inline-flex flex-col w-full gap-2">
                                     <label>{t("phone")} </label>
-                                    <input type="number" name="prenom" required className="w-full p-4 bg-cmyk/15 border
-                                        border-text/15 rounded-2xl focus:border-primary/85 focus:outline-none"
+                                    <input type="number" name="prenom" required className="w-full p-2 md:p-4 bg-cmyk/15 border
+                                        border-text/15 rounded-xl text-text font-normal focus:border-primary/85 focus:outline-none"
                                     />
                                 </li>
                             </ul>
-                            <div className="inline-flex flex-col gap-3">
+                            <div className="inline-flex flex-col gap-2">
                                 <label>Email</label>
-                                <input type="text" name="mail" required className="w-full p-4 bg-cmyk/15 border
-                                    border-text/15 rounded-2xl focus:border-primary/85 focus:outline-none"
+                                <input type="text" name="mail" required className="w-full p-2 md:p-4 bg-cmyk/15 border
+                                    border-text/15 rounded-xl text-text font-normal focus:border-primary/85 focus:outline-none"
                                 />
                             </div>
-                            <div className="inline-flex flex-col gap-3">
+                            <div className="inline-flex flex-col gap-2">
                                 <label>{t("selected")}</label>
                                 <select id="tipo" name="tipo" required 
-                                    className="w-full p-4 bg-cmyk/15 border outline-none transition-all
-                                    border-text/15 text-black/75 font-normal rounded-2xl focus:border-primary/85
+                                    className="w-full p-2 md:p-4 bg-cmyk/15 border outline-none transition-all
+                                    border-text/15 text-text font-normal font-normal rounded-xl focus:border-primary/85
                                     focus:outline-none"
                                 >
                                     {arraySelectedOption.map((option) => (
@@ -159,12 +161,12 @@ export function ContactSection () {
                                     ))}
                                 </select>
                             </div>
-                            <div className="inline-flex flex-col gap-3">
+                            <div className="inline-flex flex-col gap-2">
                                 <label>message</label>
                                 <textarea id="message" name="message" rows={6}
-                                    placeholder="Décrivez votre demande..."
-                                    className="w-full p-4 bg-cmyk/15 border outline-none text-black/75 font-normal
-                                    border-text/15 rounded-2xl focus:border-primary/85 focus:outline-none"
+                                    placeholder="Décrivez votre demande..." required
+                                    className="w-full p-2 md:p-4 bg-cmyk/15 border outline-none text-black/75 font-normal
+                                    border-text/15 text-text font-normal rounded-xl focus:border-primary/85 focus:outline-none"
                                 >
                                 </textarea>
                             </div>
