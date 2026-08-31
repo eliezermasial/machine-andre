@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { Button } from "../ui/Button";
-import { Container } from "../ui/Container";
-import { Section } from "../ui/Section";
-import { Check } from "lucide-react";
 import { cn } from "@/lib/utils/cn";
+import { Check } from "lucide-react";
+import { Button } from "../ui/Button";
+import { Section } from "../ui/Section";
+import { Container } from "../ui/Container";
 
 
 export function ServiceRental () {
@@ -61,7 +61,7 @@ export function ServiceRental () {
                             </Button>
                         </div>
                     </div>
-                    <div className="bg-red-500 relative">
+                    <div className="relative">
                         <Image
                             src="/tractor1.jpg"
                             alt="tractor one"

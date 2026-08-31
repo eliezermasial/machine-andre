@@ -10,7 +10,7 @@ export function Hero() {
     const t = useTranslations("RequeQuotePage")
 
     return (
-        <Section className="relative overflow-hidden max-md:px-3 h-100 md:h-120">
+        <Section className="relative overflow-hidden max-md:px-3 h-100">
             
             <Image
                 src={image}
@@ -22,8 +22,8 @@ export function Hero() {
                 )}
             />
 
-            <div className={cn(`absolute inset-0 bg-linear-to-r from-[#183d25]/95
-                via-[#01261f]/95 via-100% to-transparent border-none`
+            <div className={cn(`absolute inset-0 bg-linear-to-r from-[#183d25]/90
+                via-[#01261f]/90 via-100% to-transparent border-none`
             )}/>
 
             <div className="absolute left-4 top-4 z-10">
@@ -34,7 +34,7 @@ export function Hero() {
                 </span>
             </div>
             
-            <Container className="relative z-10 flex flex-col gap-5 md:gap-3 justify-center md:justify-end h-full">
+            <Container className="relative z-10 flex flex-col justify-center h-full max-md:scale-105 gap-5 md:gap-3">
                 <div>
                     <span className="inline-flex bg-gold/35 text-gold z-50 rounded-3xl px-2 py-1
                         tracking-[0.12em] text-[11px] uppercase font-bold font-sans translate-none"
@@ -42,8 +42,8 @@ export function Hero() {
                         quote
                     </span>
                 </div>
-                <div className="inline-flex flex-col gap-5 md:gap-3 max-w-220 ">
-                    <h1 className={cn("display-lg leading-tight text-white font-sans font-bold")}>
+                <div className="inline-flex flex-col gap-5 md:gap-3 md:max-w-220 ">
+                    <h1 className={cn(" text-3xl md:text-5xl leading-tight text-white font-sans font-bold")}>
                         {t("title")}
                     </h1>
                     <span className="text-lg text-white/75">
