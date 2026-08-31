@@ -97,5 +97,13 @@
     "Electronic": "Réparations électroniques",
     "Spare-parts": "Pièces de rechange",
     "btn": "Demander une assistance"
+  },
+    "Metadata": {
+    "title": "Demander un devis | Maquinaria Andrés",
+    "description": "Demander un devis"
+  },
+    "RequeQuotePage": {
+    "title": "Devis sans engagement, conseil personnalisé",
+    "description": "Dites-nous ce dont vous avez besoin et nous vous aidons à trouver la meilleure solution pour votre exploitation."
   }
 }

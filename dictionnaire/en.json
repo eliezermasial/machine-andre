@@ -97,5 +97,13 @@
     "Electronic": "Electronic repairs",
     "Spare-parts": "Spare parts",
     "btn": "Request assistance"
+  },
+  "Metadata": {
+    "title": "Request a quote | Maquinaria Andrés",
+    "description": "Request a quote"
+  },
+  "RequeQuotePage": {
+    "title": "No-obligation quote, real advice",
+    "description": "Tell us what you need and we'll help you find the best solution for your farm."
   }
 }

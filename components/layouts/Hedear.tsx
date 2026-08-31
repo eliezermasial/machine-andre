@@ -3,11 +3,11 @@
 import { useState } from "react";
 import { Logo } from "../ui/Logo";
 import { cn } from "@/lib/utils/cn";
+import { Button } from "../ui/Button";
 import { ListFilter } from "lucide-react";
 import { Container } from "../ui/Container";
 import { useTranslations } from "next-intl";
 import { useScroll } from "@/hooks/useScroll";
-import { Button } from "../ui/Button";
 import { Navigation } from "../navigation/Navigation";
 import { MenuMobile } from "../navigation/MenuMobile";
 
@@ -37,7 +37,7 @@ export function Hedear() {
                 <Logo name="maquinaria" lastName="andrés" />
                 <Navigation />
                 <div className="flex justify-baseline items-center gap-3 ">
-                    <Button>
+                    <Button href="RequeQuote">
                         {t("RequestQuote")}
                     </Button>
                     <button className={cn(`flex justify-center items-center lg:hidden p-2

@@ -13,7 +13,7 @@ type RequestQuoteProps = {
 export function Button ({children, className, href="/"}: RequestQuoteProps) {
 
     return (
-        <Link href={href}
+        <Link href={`/${href}`}
             className={cn(
                 `flex items-center text-xs xs:text-sm md:text-base justify-center bg-onPrimary font-sans px-6 py-3
                 text-center text-white rounded-lg hover:bg-primary transition-all shadow font-semibold`,
