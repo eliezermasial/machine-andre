@@ -7,6 +7,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Footer } from "@/components/layouts/Footer";
 import { Hedear } from "@/components/layouts/Hedear";
 import { PreHedear } from "@/components/layouts/PreHedear";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 
 
 const geistSans = Geist({
@@ -38,6 +39,17 @@ export default async function LocaleLayout({
                 <Hedear />
                 <main>
                     {children}
+                    <a
+                        href="https://wa.me/243820083703"
+                        target="_bank"
+                        rel="noopener noreferrer"
+                        className="fixed bottom-5 scale-100 inline-flex items-center text-base xs:text-sm
+                            md:text-base justify-center bg-green-500 font-sans p-1.5 md:px-4 md:py-2 z-50 right-16
+                        text-center text-white rounded-full hover:scale-105 transition-all shadow font-semibold"
+                    >
+                        <WhatsAppIcon className="text-white" />
+                        <span className="hidden md:inline-block">Whatsapp</span>
+                    </a>
                 </main>
                 <Footer />
             </div>
