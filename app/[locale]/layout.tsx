@@ -43,8 +43,8 @@ export default async function LocaleLayout({
                         href="https://wa.me/243820083703"
                         target="_bank"
                         rel="noopener noreferrer"
-                        className="fixed bottom-5 scale-100 inline-flex items-center text-base xs:text-sm
-                            md:text-base justify-center bg-green-500 font-sans p-1.5 md:px-4 md:py-2 z-50 right-16
+                        className="fixed bottom-5 scale-105 md:scale-100 inline-flex items-center text-base xs:text-sm
+                            md:text-base justify-center bg-green-500 font-sans p-2.5 md:px-4 md:py-2 z-50 right-5 md:right-15
                         text-center text-white rounded-full hover:scale-105 transition-all shadow font-semibold"
                     >
                         <WhatsAppIcon className="text-white" />
