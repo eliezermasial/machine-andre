@@ -38,9 +38,10 @@ export function RequestQuote () {
 
     return (
         <Section className="bg-cmyk/85 max-md:px-3">
-            <Container className="max-md:py-20">
-                <div className="flex flex-col bg-yellow justify-center items-center mb-20">
-                    <div className="w-full md:w-[70%] pt-14 md:pt-10 md:pb-0">
+            <Container className="max-md:pb-10 flex flex-col gap-10 md:gap-5">
+                
+                <div className="flex flex-col justify-center items-center mb-10">
+                    <div className="w-full md:w-[70%]">
                         <p className="text-onPrimary text-center text-sm font-semibold font-sans">
                             Quote
                         </p>
