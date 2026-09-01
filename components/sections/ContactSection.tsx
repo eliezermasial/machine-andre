@@ -6,16 +6,25 @@ import { Section } from "../ui/Section";
 import { useTranslations } from "next-intl";
 import { Container } from "../ui/Container";
 import { arraySelectedOption } from "@/lib/constants";
-import { MapPinCheckInside, Phone, Mail, Clock, Check } from "lucide-react";
+import { MapPinCheckInside, Phone, Mail, Clock } from "lucide-react";
+import { FormSuccess } from "../ui/FormSuccess";
+import { Form } from "../ui/Form";
+import { WhatsApp } from "../ui/WhatsApp";
+
 
 
 export function ContactSection () {
 
     const t = useTranslations("ContactSection");
+    const [isSubmiting, setIsSubmiting] = useState<boolean>(false);
     const [isSubmited, setIsSubmited] = useState<boolean>(false);
 
-    const handleSubmited = (e: React.SubmitEvent<HTMLFormElement>) => {
+    const handleSubmited = async (e: React.SubmitEvent<HTMLFormElement>) => {
         e.preventDefault();
+        setIsSubmiting(true)
+
+        await new Promise((resolve) => setTimeout(resolve, 300));
+        setIsSubmiting(false);
         setIsSubmited(true)
     };
 
@@ -88,9 +97,8 @@ export function ContactSection () {
                             <Button className="bg-onPrimary/75">
                                 {t("call")}
                             </Button>
-                            <Button className="bg-green-600 capitalize hover:bg-onPrimary/80">
-                                WhatsApp
-                            </Button>
+                            
+                            <WhatsApp className=" bg-green-600 capitalize hover:bg-onPrimary/80" />
                         </div>
                     </div>
 
@@ -110,23 +118,12 @@ export function ContactSection () {
                             </span>
                         </div>
                         {isSubmited ? (
-                            <div className="bg-white rounded-xl md:p-8 gap-5 p-5">
-                                <div className="bg-gray-200/55 border border-primary/15
-                                    rounded-xl p-8 gap-2 flex flex-col items-center">
-                                    <div className="bg-onPrimary p-3 rounded-full">
-                                        <Check size={20} className="text-white" />
-                                    </div>
-                                    <h3 className="text-xl max-md:text-center font-sans text-primary font-bold leading-[1.15]">
-                                        {t("message-title")}
-                                    </h3>
-                                    <span className="text-center font-medium text-sm text-black/75">
-                                        {t("soubmited-message")}
-                                    </span>
-                                </div>
-                            </div>
+                            <FormSuccess />
                         ): (
-                        <form onSubmit={handleSubmited} className="flex flex-col md:px-10 text-onPrimary/85
-                            font-bold font-sans text-sm bg-white capitalize rounded-xl gap-5 md:py-10 p-5"
+                        <Form
+                            handleSubmited={handleSubmited}
+                            isSubmited={isSubmited}
+                            isSubmiting={isSubmiting}
                         >
                             <input type="text" className="hidden" name="locale" />
                             <ul className="inline-flex max-md:flex-col justify-between gap-5 lg:gap-10">
@@ -170,16 +167,10 @@ export function ContactSection () {
                                 >
                                 </textarea>
                             </div>
-                            <div className="">
-                                <button type="submit" className="inline-flex max-md:w-full items-center bg-onPrimary text-xs xs:text-sm md:text-base
-                                    font-sans px-6 py-3 text-white/85 rounded-xl hover:bg-primary transition-all font-semibold"
-                                >
-                                    {t("btn-submit")}
-                                </button>
-                            </div>
-                        </form>
+                        </Form>
                         )}
                     </div>
+
                 </div>
             </Container>
         </Section>

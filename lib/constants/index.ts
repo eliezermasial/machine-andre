@@ -77,3 +77,18 @@ export const arraySelectedOption = [
     "Financing",
     "Other"
 ] as const;
+
+export const HowItWorks = [
+    {
+        title: "Tell us what you need",
+        desc: "Specify the type of machinery, service or product you're looking for."
+    },
+    {
+        title: "We advise you",
+        desc: "Our team reviews your case and suggests the best option.",
+    },
+    {
+        title: "Receive your quote",
+        desc: "We send you a clear proposal tailored to your farm."
+    }
+] as const;
