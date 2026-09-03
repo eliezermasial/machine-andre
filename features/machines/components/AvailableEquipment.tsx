@@ -26,13 +26,13 @@ export function AvailableEquipment () {
                             </p>
                         </div>
                     </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 px-3 pb-5 ">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 px-1 pb-5 ">
                     {machines.map((item) => (
                         <Card key={item.name} className="group relative w-full md:max-w-97.5 border-0
                             overflow-hidden rounded-2xl hover:border-0 shadow-lg delay-200
                             transition-transform shadow-gray-500/35 scale-100 hover:scale-99"
                         >
-                            <CardHeader className="relative h-60 mb-0 overflow-hidden">
+                            <CardHeader className="relative h-60 mb-0 overflow-hidden scale-100">
                                 <Link href={""} className="relative block h-full w-full">
                                     <Image src={item.src} alt={item.alt} fill loading="lazy"
                                         className="object-cover transition-transform duration-100
