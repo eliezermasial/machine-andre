@@ -1,16 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "../ui/Button";
-import { Section } from "../ui/Section";
+import { Form } from "../../../components/ui/Form";
+import { Button } from "../../../components/ui/Button";
+import { Section } from "../../../components/ui/Section";
+import { WhatsApp } from "../../../components/ui/WhatsApp";
 import { useTranslations } from "next-intl";
-import { Container } from "../ui/Container";
+import { Container } from "../../../components/ui/Container";
+import { FormSuccess } from "../../../components/ui/FormSuccess";
 import { arraySelectedOption } from "@/lib/constants";
 import { MapPinCheckInside, Phone, Mail, Clock } from "lucide-react";
-import { FormSuccess } from "../ui/FormSuccess";
-import { Form } from "../ui/Form";
-import { WhatsApp } from "../ui/WhatsApp";
-
 
 
 export function ContactSection () {
@@ -98,7 +97,9 @@ export function ContactSection () {
                                 {t("call")}
                             </Button>
                             
-                            <WhatsApp className=" bg-green-600 capitalize hover:bg-onPrimary/80" />
+                            <WhatsApp className=" bg-green-600 capitalize hover:bg-onPrimary/80">
+                                Whatsapp
+                            </WhatsApp>
                         </div>
                     </div>
 
@@ -135,7 +136,7 @@ export function ContactSection () {
                                 </li>
                                 <li className="inline-flex flex-col w-full gap-2">
                                     <label>{t("phone")} </label>
-                                    <input type="number" name="prenom" required className="w-full p-2 md:p-4 bg-cmyk/15 border
+                                    <input type="number" name="prenom" required inputMode="numeric" className="w-full p-2 md:p-4 bg-cmyk/15 border
                                         border-text/15 rounded-xl text-text font-normal focus:border-primary/85 focus:outline-none"
                                     />
                                 </li>

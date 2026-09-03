@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils/cn";
 import { Check } from "lucide-react";
-import { Button } from "../ui/Button";
-import { Section } from "../ui/Section";
-import { Container } from "../ui/Container";
+import { Button } from "../../../components/ui/Button";
+import { Section } from "../../../components/ui/Section";
+import { Container } from "../../../components/ui/Container";
 
 
 export function ServiceRental () {

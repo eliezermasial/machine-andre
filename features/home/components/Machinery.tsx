@@ -1,11 +1,12 @@
 import Image from "next/image";
-import { Card } from "../ui/Card";
-import { Button } from "../ui/Button";
-import { Section } from "../ui/Section";
 import { Link } from "@/i18n/navigation";
 import { machines } from "@/lib/constants";
-import { Container } from "../ui/Container";
 import { useTranslations } from "next-intl";
+import { Card } from "@/components/ui/Card";
+import { Button } from "@/components/ui/Button";
+import { Section } from "@/components/ui/Section";
+import { Container } from "@/components/ui/Container";
+import { Badge } from "@/components/ui/Badge";
 
 
 export function Machinery() {
@@ -26,7 +27,7 @@ export function Machinery() {
                             </p>
                         </div>
                         <div className="flex md:items-end-safe scale-100">
-                            <Button className="bg-transparent text-onPrimary border-onPrimary
+                            <Button href="machinery" className="bg-transparent text-onPrimary border-onPrimary
                                 border-3 hover:bg-onPrimary hover:text-white whitespace-nowrap  "
                             >
                                 {t("btn")}
@@ -49,13 +50,9 @@ export function Machinery() {
                                         from-[#004d35] via-[#004d35]/80 to-transparent"
                                     />
 
-                                    <div className="absolute left-4 top-4 z-10">
-                                        <span className="inline-flex bg-gold rounded-md font-bold px-2 py-1
-                                            tracking-[0.12em] text-[11px] uppercase text-primary"
-                                        >
-                                            {t(item.name)}
-                                        </span>
-                                    </div>
+                                    <Badge>
+                                        {t(item.name)}
+                                    </Badge>
 
                                     <div className="absolute inset-x-0 bottom-0 z-10 p-5">
                                         <h3 className="text-2xl font-bold font-sans capitalize leading-tight text-white">

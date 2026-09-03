@@ -18,7 +18,6 @@ export function WhatsApp({children,className, href="https://wa.me/243820083703" 
       )}
     >
       {children}      
-      <span className="">Whatsapp</span>
     </a>
   );
 }

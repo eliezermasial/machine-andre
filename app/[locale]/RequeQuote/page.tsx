@@ -1,8 +1,10 @@
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { Hero } from "@/features/RequeQuote/components/Hero";
-import { Contact } from "@/features/RequeQuote/components/Contact";
+import image from "@/public/champ.jpg";
 import { RequestQuote } from "@/features/RequeQuote/components/RequestQuote";
+import { Contact } from "@/features/RequeQuote/components/Contact";
+import { Hero } from "@/components/sections/Hero";
+
 
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -13,10 +15,16 @@ export async function generateMetadata(): Promise<Metadata> {
     };
 }
 
-export default function RequeQuote () {
+export default async function RequeQuote () {
+    const t = await getTranslations("RequeQuotePage")
     return (
         <>
-            <Hero />
+            <Hero 
+                title={t("title")} 
+                subtitle="Request a quote" 
+                desc={t("description")}
+                image={image}
+            />
             <RequestQuote />
             <Contact />
         </>

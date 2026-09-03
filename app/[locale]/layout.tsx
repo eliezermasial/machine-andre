@@ -41,7 +41,7 @@ export default async function LocaleLayout({
                     {children}
                     <WhatsApp
                         className="fixed bottom-5 scale-105 md:scale-100 inline-flex items-center
-                        p-2.5 md:px-4 md:py-2 z-50 right-5 md:right-15 hover:bg-green-600 text-base
+                        p-1 md:px-4 md:py-2 z-50 right-5 md:right-15 hover:bg-green-600 text-base
                         rounded-full hover:scale-105 transition-all shadow font-semibold xs:text-sm"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width={35} height={35} fill="currentColor"
@@ -61,6 +61,7 @@ export default async function LocaleLayout({
                             371.1C430.3 368.6 426.6 367.2 421.1 364.5z"
                             />
                         </svg>
+                        <span className="hidden md:inline-block">Whatsapp</span>
                     </WhatsApp>
                 </main>
                 <Footer />

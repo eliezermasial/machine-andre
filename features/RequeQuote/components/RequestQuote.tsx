@@ -100,11 +100,13 @@ export function RequestQuote () {
                             </p>
                         </div>
                         
-                        <div className="inline-flex gap-3 w-full p-2">
+                        <div className="inline-flex gap-3 p-2 w-full">
                             <Button className="bg-primary hover:bg-primary/90 whitespace-nowrap">
                                 {t("call")}
                             </Button>
-                            <WhatsApp className=" bg-green-600 capitalize hover:bg-onPrimary/80" />
+                            <WhatsApp className=" bg-green-600 capitalize hover:bg-onPrimary/80">
+                                Whatsapp
+                            </WhatsApp>
                         </div>
                     </div>
 

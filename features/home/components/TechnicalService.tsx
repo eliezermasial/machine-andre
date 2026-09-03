@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { Dot } from "lucide-react";
-import { Button } from "../ui/Button";
-import { Section } from "../ui/Section";
-import { Container } from "../ui/Container";
 import { useTranslations } from "next-intl";
+import { Button } from "@/components/ui/Button";
+import { Section } from "@/components/ui/Section";
+import { Container } from "@/components/ui/Container";
 
 
 export function TechnicalService () {

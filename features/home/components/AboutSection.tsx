@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils/cn";
-import { Button } from "../ui/Button";
-import { Section } from "../ui/Section";
-import { Container } from "../ui/Container";
+import { Button } from "../../../components/ui/Button";
+import { Section } from "../../../components/ui/Section";
+import { Container } from "../../../components/ui/Container";
 import { useTranslations } from "next-intl";
-import { Counter } from "../animations/Counter";
+import { Counter } from "../../../components/animations/Counter";
 import {advantages, images} from "@/lib/constants"
 
 

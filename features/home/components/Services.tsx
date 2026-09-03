@@ -3,9 +3,9 @@
 import { motion } from "motion/react";
 import { Link } from "@/i18n/navigation";
 import { services } from "@/lib/constants";
-import { Container } from "../ui/Container";
 import { useTranslations } from "next-intl";
-import { Card, CardParagraphy, CardTitle } from "../ui/Card";
+import { Container } from "../../../components/ui/Container";
+import { Card,  CardParagraphy, CardTitle  } from "@/components/ui/Card";
 
 
 export function Services () {

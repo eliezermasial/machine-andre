@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { Card } from "../ui/Card";
+import { Card } from "../../../components/ui/Card";
 import { cn } from "@/lib/utils/cn";
 import { Droplet} from "lucide-react";
-import { Button } from "../ui/Button";
-import { Section } from "../ui/Section";
+import { Button } from "../../../components/ui/Button";
+import { Section } from "../../../components/ui/Section";
 import { Link } from "@/i18n/navigation";
 import { products } from "@/lib/constants";
-import { Container } from "../ui/Container";
+import { Container } from "../../../components/ui/Container";
 
 
 export function Products() {
