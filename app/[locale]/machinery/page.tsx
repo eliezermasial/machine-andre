@@ -1,5 +1,7 @@
 import { Hero } from "@/components/sections/Hero";
 import { CategoryGrid } from "@/features/machines/components/CategoryGrid";
+import { AvailableEquipment } from "@/features/machines/components/AvailableEquipment";
+
 
 import image from "@/public/motoculteur.jpg"
 
@@ -13,7 +15,7 @@ export default async function MachineryPage () {
                 image={image}
             />
             <CategoryGrid />
-
+            <AvailableEquipment />
         </>
     )
 }
