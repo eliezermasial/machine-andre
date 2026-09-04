@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils/cn";
+import { Badge } from "../ui/Badge";
 import { Section } from "@/components/ui/Section";
 import Image, { StaticImageData } from "next/image";
 import { Container } from "@/components/ui/Container";
@@ -30,13 +31,9 @@ export function Hero({title, desc, subtitle, image}: HeroProps) {
                 via-[#01261f]/90 via-100% to-transparent border-none`
             )}/>
 
-            <div className="absolute left-4 top-4 z-10">
-                <span className="inline-flex bg-gold rounded-md font-bold px-2 py-1
-                    tracking-[0.12em] text-[11px] uppercase translate-none text-primary"
-                >
-                    {subtitle}
-                </span>
-            </div>
+            <Badge>
+                {subtitle}
+            </Badge>
             
             <Container className="relative z-10 flex flex-col justify-center h-full max-md:scale-105 ">
                 <div className="inline-flex flex-col gap-5 md:gap-3 md:max-w-220 ">

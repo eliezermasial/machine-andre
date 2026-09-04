@@ -105,5 +105,16 @@
     "RequeQuotePage": {
     "title": "Devis sans engagement, conseil personnalisé",
     "description": "Dites-nous ce dont vous avez besoin et nous vous aidons à trouver la meilleure solution pour votre exploitation."
+  },
+  "Machine-page": {
+  "title": "Matériel agricole prêt à travailler",
+  "desc": "Des équipements modernes, robustes et prêts à offrir un rendement maximal sur le terrain.",
+  "subtitle": "Matériel agricole",
+  "section-category-title": "Parcourir par catégorie",
+  "section-category-desc": "Trouvez le matériel adapté à votre exploitation et à chaque type de travail.",
+  "section-equipement-title": "Équipements disponibles",
+  "section-equipement-desc": "20 machines répertoriées",
+  "btn-Request": "Demande des informations",
+  "btn-view": "Voir les détails"
   }
 }

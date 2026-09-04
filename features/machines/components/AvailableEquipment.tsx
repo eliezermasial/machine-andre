@@ -11,22 +11,53 @@ import { Card, CardContent, CardHeader, CardParagraphy } from "@/components/ui/C
 
 export function AvailableEquipment () {
     const t = useTranslations("machinery")
-
+    const T = useTranslations("Machine-page")
     return (
-        <Section className="bg-white max-md:px-3 overflow-x-hidden">
-            <Container>
-                <div className="grid overflow-x-hidden max-md:scale-107 max-md:py-20 gap-10">
+        <Section className="bg-white max-md:px-3 overflow-hidden">
+            <Container className="max-md:py-25">
+                <div className="flex flex-col overflow-hidden max-md:scale-107 gap-10">
                     <div className="flex max-md:flex-col p-2 justify-between gap-5 max-md:gap-8">
                         <div className="scale-100">
                             <h2 className="text-3xl md:text-5xl text-primary my-5 font-sans font-bold leading-[1.05]">
-                                Équipement disponible
+                                {T("section-equipement-title")}
                             </h2>
                             <p className="md:max-w-xl text-md text-text">
-                                20 machines répertoriées
+                                {t("section-equipement-desc")}
                             </p>
                         </div>
                     </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 px-1 pb-5 ">
+                    <div className="flex max-md:flex-col gap-5 max-md:justify-center md:items-center mb-5
+                    text-black px-5 md:px-10 py-5 border border-gray-300/55 text-sm shadow-md rounded-2xl md:mx-2"
+                    >
+                        <span className="text-onPrimary/45 font-semibold font-sans">Catégorie:</span>
+                        <select className="border border-gray-300/45 text-primary/75 rounded-lg font-sans
+                            py-3 focus:outline-1 outline-primary/75 px-5"
+                        >
+                            <option>Catégorie</option>
+                            <option>tous</option>
+                        </select>
+                        <select className="border border-gray-300/45 text-primary/75 rounded-lg font-sans
+                            py-3 focus:outline-1 outline-primary/75 px-5">
+                            <option>Marque</option>
+                            <option>tous</option>
+                        </select>
+                        <select className="border border-gray-300/45 text-primary/75 rounded-lg font-sans
+                            py-3 focus:outline-1 outline-primary/75 px-5">
+                            <option>État</option>
+                            <option>tous</option>
+                        </select>
+                        <select className="border border-gray-300/45 text-primary/75 rounded-lg font-sans px-5
+                            py-3 focus:outline-1 outline-primary/75">
+                            <option>Prix</option>
+                            <option>tous</option>
+                        </select>
+                        <select className="border border-gray-300/45 text-primary/75 rounded-lg font-sans px-5
+                            py-3 focus:outline-1 outline-primary/75">
+                            <option>puissance</option>
+                            <option>tous</option>
+                        </select>
+                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:px-1 pb-5">
                     {machines.map((item) => (
                         <Card key={item.name} className="group relative w-full md:max-w-97.5 border-0
                             overflow-hidden rounded-2xl hover:border-0 shadow-lg delay-200
@@ -69,10 +100,10 @@ export function AvailableEquipment () {
                                     <Button className="bg-transparent text-primary border-2 border-onPrimary text-nowrap text-start
                                         capitalize hover:bg-onPrimary hover:text-white transition-all delay-100"
                                     >
-                                        Voir les détails
+                                        {T("btn-view")}
                                     </Button>
                                     <Button className="text-start capitalize">
-                                        Demande des informations
+                                        {T("btn-Request")}
                                     </Button>
                                 </div>
                             </CardContent>           

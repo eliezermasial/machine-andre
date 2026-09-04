@@ -10,21 +10,22 @@ import { Container } from "@/components/ui/Container";
 
 export function CategoryGrid () {
     const t = useTranslations("machinery")
+    const T = useTranslations("Machine-page")
 
     return (
-        <Section className="bg-gray-100 max-md:px-3 overflow-x-hidden">
+        <Section className="bg-gray-100 max-md:px-3 overflow-hidden">
             <Container>
-                <div className="grid max-md:scale-107 overflow-x-hidden max-md:py-20 gap-10">
+                <div className="grid max-md:scale-107 overflow-hidden max-md:py-20 gap-10">
                     <div className="flex max-md:flex-col p-2 justify-between gap-5 max-md:gap-8">
                         <div className="scale-100">
                             <span className="text-primary font-semibold font-sans leading-[1.05]">
                                 Machinerie
                             </span>
                             <h2 className="text-3xl md:text-5xl text-primary my-5 font-sans font-bold leading-[1.05]">
-                                Parcourir par catégorie
+                                {T("section-category-title")}
                             </h2>
                             <p className="md:max-w-xl text-md text-text">
-                                Trouvez le matériel adapté à votre exploitation et à chaque type de travail.
+                                {T("section-category-desc")}
                             </p>
                         </div>
                     </div>

@@ -105,5 +105,16 @@
   "RequeQuotePage": {
     "title": "No-obligation quote, real advice",
     "description": "Tell us what you need and we'll help you find the best solution for your farm."
+  },
+  "Machine-page": {
+    "title": "Agricultural machinery ready to work",
+    "desc": "Modern, durable equipment ready to deliver maximum performance in the field.",
+    "subtitle": "Agricultural machinery",
+    "section-category-title": "Browse by category",
+    "section-category-desc": "Find the right equipment for your farm and every type of work.",
+    "section-equipement-title": "Available equipment",
+    "section-equipement-desc": "20 machines listed",
+    "btn-Request": "Request information",
+    "btn-view": "View details"
   }
 }

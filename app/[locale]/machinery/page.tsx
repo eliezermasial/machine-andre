@@ -4,14 +4,16 @@ import { AvailableEquipment } from "@/features/machines/components/AvailableEqui
 
 
 import image from "@/public/motoculteur.jpg"
+import { getTranslations } from "next-intl/server";
 
 export default async function MachineryPage () {
+    const t = await getTranslations("Machine-page")
     return (
         <>
             <Hero
-                title="Machines agricoles prêtes à l'emploi"
-                desc="Un équipement moderne et robuste, prêt à offrir des performances maximales sur le terrain."
-                subtitle="machine agricol"
+                title={t("title")}
+                desc={t("desc")}
+                subtitle={t("subtitle")}
                 image={image}
             />
             <CategoryGrid />
